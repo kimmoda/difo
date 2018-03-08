@@ -1,6 +1,5 @@
 # DIFO
-The original project called ZION. We want to build a decentralised place like ZION for influencers. Now we renamed to DIFO (decentralised influencer Organisation). This project took us 1 year to build from version 1 to version 4.3.0. Now we are open source it.
-Feel free to join this community.
+The original project is called ZION. We want to build a decentralised place like ZION for influencers. Now we rename it to DIFO (decentralised influencer Organisation). This project took us 1 year to build from version 1.0.0 to version 4.3.0. Now we open source it.Feel free to join DIFO community.
 
 ## Gradle
 - run ./gradlew build
