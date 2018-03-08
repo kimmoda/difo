@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /action/auth*/
+Disallow: /action/superadmin*/
+Disallow: /static/
+Disallow: /restws/
+Disallow: /*.pack
+Sitemap: https://stylehub.online/sitemap.xml

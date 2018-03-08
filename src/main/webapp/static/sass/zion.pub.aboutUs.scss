@@ -1,0 +1,255 @@
+@import "zion.util";
+
+.zion-wrapper {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    -ms-flex-direction: column; /* TWEENER - IE 10 */
+    flex-direction: column;
+    .zion-content {
+        width: 100%;
+        padding: 0;
+        @media (max-width: 767px) {
+            margin-top: 35px;
+        }
+    }
+}
+
+.zion-pub-footer {
+    position: inherit;
+}
+.zion-about-us-container {
+    .header {
+        position: relative;
+        height: 520px;
+        background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/aboutus/top-banner.jpg") center / cover;
+        @media (min-width: 992px) and (max-width: 1199px) {
+            height: 460px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            height: 420px;
+        }
+        @media (max-width: 767px) {
+            height: 500px;
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            -ms-flex-direction: column-reverse; /* TWEENER - IE 10 */
+            flex-direction: column-reverse;
+        }
+        @media (max-width: 419px) {
+            height: 300px;
+        }
+    }
+    .main-content {
+        position: relative;
+        padding-top: 5%;
+    }
+    .title {
+        font-weight: bold;
+        font-size: 1.2vw;
+        margin-bottom: 4%;
+        @media (max-width: 991px) {
+            font-size: 2.2vw;
+        }
+    }
+    .sub-title {
+        font-weight: bold;
+        color: $color-grey-dark;
+    }
+    .text {
+        font-size: 1vw;
+        @media (max-width: 991px) {
+            font-size: 2vw;
+        }
+        .text-mark {
+            font-weight: bold;
+        }
+    }
+    .quote {
+        margin: 0 10px;
+        color: $color-grey-extra-light;
+    }
+    .quote-right {
+        vertical-align: text-top;
+    }
+    .header-content {
+        position: absolute;
+        bottom: 15%;
+        left: 15%;
+        width: 34%;
+        padding: 20px 0;
+        background-color: white;
+        font-size: 14px;
+        text-align: center;
+        @media (min-width: 1440px) {
+            width: 30%;
+            padding: 20px;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            width: 40%;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 35%;
+        }
+        @media (max-width: 767px) {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 65%;
+            padding: 20px 0;
+            margin: 0 auto 40px;
+        }
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+        .top-banner-content {
+            margin-bottom: 10px;
+        }
+        .title {
+            margin-bottom: 0;
+        }
+        .zion-btn-black {
+            font-size: 1vw;
+            @media (max-width: 767px) {
+                font-size: 2vw;
+            }
+        }
+    }
+    .background-pattern {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 400px;
+        background-image: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/aboutus/bg-pattern.png");
+    }
+    .body {
+        position: relative;
+        z-index: 2;
+        padding: 4%;
+        margin-bottom: 4%;
+        width: 75%;
+        background-color: $color-white;
+        .section-break {
+            margin-top: 4%;
+            margin-bottom: 4%;
+            border-top: 1px dashed $color-grey-extra-light;
+        }
+        .introduce {
+            .content {
+                margin-top: 5%;
+            }
+            .banner-image {
+                width: 100%;
+            }
+        }
+        .become-trendsetter {
+            margin-bottom: 20px;
+            .btn {
+                font-size: 1vw;
+                @media (max-width: 767px) {
+                    font-size: 2vw;
+                }
+            }
+        }
+        .video-container {
+            height: 37vw;
+            margin-bottom: 2%;
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+        .story {
+            .image {
+                margin-bottom: 2%;
+            }
+            .story-content {
+                margin-bottom: 2%;
+            }
+            .hr-content {
+                margin-top: 5%;
+                .text {
+                    margin-bottom: 5%;
+                }
+            }
+            .hr-idea {
+                margin-top: 3%;
+                margin-bottom: 3%;
+                font-size: 2vw;
+                text-align: center;
+                .idea-container {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .text {
+                    font-size: 1.5vw;
+                    @media (max-width: 991px) {
+                        font-size: 2.4vw;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        //position: relative;
+        //top: -300px;
+        background-color: $color-white;
+        //@media (max-width: 767px) {
+        //    top: -360px;
+        //}
+        .btn {
+            @media (max-width: 991px) {
+                font-size: 2vw;
+            }
+        }
+        .footer-container {
+            width: 76.5%;
+            margin: 0 auto;
+            padding: 20px 0;
+            @media (min-width: 992px) {
+                display: -ms-flexbox; /* TWEENER - IE 10 */
+                display: flex;
+            }
+            .zion-form {
+                @media (min-width: 991px) {
+                    margin-top: 8%;
+                }
+            }
+        }
+        .break {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            @media (max-width: 991px) {
+                margin: 5% 0;
+                border: 1px dashed $color-grey-extra-light;
+            }
+    }
+        .line-break {
+            height: 90%;
+            margin: auto;
+            border-left: 2px solid $color-grey-extra-light;
+        }
+        .contact-message {
+            resize: none;
+            @media (max-width: 419px) {
+                height: 83px;
+            }
+        }
+        .sub-title {
+            margin-bottom: 2%;
+        }
+        .social-media-header {
+            margin-bottom: 3%;
+            .title {
+                display: inline-block;
+            }
+        }
+        .follow-instagram-btn {
+            border: none;
+            background-color: $color-grey-extra-light;
+            font-weight: bold;
+        }
+    }
+}
+

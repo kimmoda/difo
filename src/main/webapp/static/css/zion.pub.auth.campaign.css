@@ -1,0 +1,60 @@
+.campaign-menu {
+  border-bottom: 3px solid #656364;
+  border-radius: 0; }
+
+.title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 17px; }
+
+.account-campaign {
+  margin-top: -10px;
+  text-align: right;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .account-campaign .account {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 200px; }
+    .account-campaign .account .account-row-container {
+      position: relative;
+      display: block;
+      height: 20px;
+      max-width: 200px; }
+      .account-campaign .account .account-row-container .account-title {
+        position: absolute;
+        left: 0; }
+      .account-campaign .account .account-row-container .amount {
+        position: absolute;
+        right: 0; }
+    .account-campaign .account .balance {
+      margin-top: 5px; }
+    .account-campaign .account .line {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em; }
+
+.my-finished-task-container {
+  margin-top: 15px;
+  display: none; }
+  .my-finished-task-container .finished-list {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0; }
+    .my-finished-task-container .finished-list .zion-campaign-reword {
+      text-align: right;
+      padding-right: 15px; }
+    .my-finished-task-container .finished-list .zion-campaign-reword-icon {
+      padding-top: 8px; }
+    .my-finished-task-container .finished-list .zion-campaign-reward-text {
+      float: right; }
+
+.campaign-history-container {
+  margin-top: 15px; }
+  .campaign-history-container .zion-campaign-participant {
+    margin: 20px 0; }
+  .campaign-history-container .zion-campaign-participant-name {
+    margin-left: 10px; }
+  .campaign-history-container .zion-campaign-reword {
+    float: right;
+    line-height: 30px; }

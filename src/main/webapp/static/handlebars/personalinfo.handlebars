@@ -1,0 +1,18 @@
+<section class="zion-stylist-profile">
+    <div class="row">
+        {{#if introduction}}
+            <article class="bio col-xs-12">
+                <h3 class="title">Bio</h3>
+                <p class="content">
+                    {{introduction}}
+                </p>
+            </article>
+        {{else}}
+            <article class="bio col-xs-12">
+                <h3>This fashion trendsetter hasn't added any about info yet.
+                    <i class="fa fa-frown-o" aria-hidden="true"></i>
+                </h3>
+            </article>
+        {{/if}}
+    </div>
+</section>

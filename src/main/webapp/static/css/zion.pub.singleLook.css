@@ -1,0 +1,131 @@
+.zion-wrapper .zion-content {
+  margin-top: 0;
+  padding-bottom: 50px; }
+
+.zion-tab-bar-container {
+  display: none !important; }
+
+.annotation-container {
+  max-width: 600px;
+  margin: auto; }
+
+.single-feed-container {
+  /* Create a 16:9 empty container for iframe stretch to fit it.
+     Container width is 100% with its' parent element.
+     Set padding-bottom 56.25% to make container height is 56.25% of its width */ }
+  .single-feed-container img {
+    width: 100%; }
+  .single-feed-container .zion-feed-header {
+    margin-top: 20px;
+    margin-bottom: 15px; }
+  .single-feed-container .author-info-container {
+    position: relative;
+    display: block;
+    margin: auto;
+    max-width: 600px; }
+    .single-feed-container .author-info-container .image-avatar {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #e5e5e5; }
+    .single-feed-container .author-info-container .author-info {
+      display: inline-block;
+      float: left; }
+    .single-feed-container .author-info-container .author-name-content {
+      display: inline-block;
+      padding-left: 10px;
+      color: #1f1e1f;
+      font-size: 12px;
+      font-weight: bold; }
+    .single-feed-container .author-info-container:hover {
+      cursor: default; }
+  .single-feed-container .show-feed-share-container {
+    display: inline-block; }
+  .single-feed-container .feed-title-content {
+    margin-bottom: 5px;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .single-feed-container .feed-title-content {
+        font-size: 14px; } }
+  .single-feed-container .feed-publish-time-content {
+    margin-bottom: 10px;
+    color: #a5a5a5;
+    font-size: 13px; }
+    @media (max-width: 767px) {
+      .single-feed-container .feed-publish-time-content {
+        font-size: 12px; } }
+  .single-feed-container .zion-feed-footer {
+    margin-top: 30px; }
+    .single-feed-container .zion-feed-footer .description {
+      padding-bottom: 80px;
+      font-size: 18px;
+      line-height: 1.7em; }
+      @media (max-width: 767px) {
+        .single-feed-container .zion-feed-footer .description {
+          font-size: 14px; } }
+  .single-feed-container .cover-image-content, .single-feed-container .media-image-content, .single-feed-container .media-video-content {
+    overflow-wrap: break-word;
+    font-style: italic;
+    font-size: 13px;
+    color: #a5a5a5; }
+  .single-feed-container .description, .single-feed-container .text-container {
+    overflow-wrap: break-word;
+    font-size: 13px; }
+  .single-feed-container .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+    .single-feed-container .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .single-feed-container .easypin {
+    display: inline-block; }
+    .single-feed-container .easypin img {
+      width: auto;
+      max-height: 700px; }
+  .single-feed-container .ie-display-image {
+    width: 100%; }
+  .single-feed-container .share-feed-btn {
+    display: inline-block;
+    float: right;
+    padding: 2px 8px; }
+  .single-feed-container .feed-share-container {
+    display: none;
+    width: 260px;
+    height: 90px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 105px;
+    z-index: 3;
+    background-color: #FFFFFF;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px; }
+  .single-feed-container .show-feed-share-container {
+    display: inline-block; }
+
+.zion-pub-footer {
+  display: none !important; }
+
+.single-feed-footer {
+  height: 12px;
+  width: 100%;
+  background: #1f1e1f;
+  padding-top: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .single-feed-footer .container {
+    text-align: center;
+    font-size: 8px; }
+    .single-feed-footer .container a {
+      color: #a5a5a5;
+      font-weight: 100; }
+      .single-feed-footer .container a:hover {
+        color: #e5e5e5; }

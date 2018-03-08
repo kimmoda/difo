@@ -1,0 +1,120 @@
+.zion-pub-head-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  z-index: 333;
+  background: #FFFFFF;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) !important; }
+  .zion-pub-head-menu .navbar-collapse {
+    position: relative; }
+  .zion-pub-head-menu .logo img {
+    height: 65px; }
+  .zion-pub-head-menu .main_menu .navbar {
+    margin-bottom: 0; }
+  .zion-pub-head-menu .main_menu .navbar-nav {
+    margin: 0 -15px;
+    text-align: center; }
+    .zion-pub-head-menu .main_menu .navbar-nav .mobile-menu-option {
+      display: none; }
+      @media (max-width: 767px) {
+        .zion-pub-head-menu .main_menu .navbar-nav .mobile-menu-option {
+          display: block; } }
+      .zion-pub-head-menu .main_menu .navbar-nav .mobile-menu-option #menu-auth-header-profiles {
+        display: none; }
+    .zion-pub-head-menu .main_menu .navbar-nav .active span {
+      font-weight: bold; }
+    @media (max-width: 767px) {
+      .zion-pub-head-menu .main_menu .navbar-nav li:nth-child(n+2) {
+        border-top: 1px solid #404040; } }
+    .zion-pub-head-menu .main_menu .navbar-nav li:hover {
+      background: none;
+      color: #FFFFFF; }
+    .zion-pub-head-menu .main_menu .navbar-nav li:focus {
+      background: none;
+      color: #FFFFFF; }
+    .zion-pub-head-menu .main_menu .navbar-nav li a {
+      color: #1f1e1f;
+      padding: 5px 16px;
+      font-size: 14px;
+      font-family: 'Raleway';
+      font-weight: 500;
+      line-height: 55px; }
+      @media (max-width: 767px) {
+        .zion-pub-head-menu .main_menu .navbar-nav li a {
+          line-height: 30px; } }
+      .zion-pub-head-menu .main_menu .navbar-nav li a .highlight {
+        padding: 7px 22px;
+        border: 2px solid #656364;
+        border-radius: 30px; }
+        @media (max-width: 767px) {
+          .zion-pub-head-menu .main_menu .navbar-nav li a .highlight {
+            border: none;
+            border-radius: 0; } }
+      .zion-pub-head-menu .main_menu .navbar-nav li a:hover {
+        color: #1f1e1f; }
+    .zion-pub-head-menu .main_menu .navbar-nav li .avatar img {
+      width: 30px;
+      height: 30px; }
+    .zion-pub-head-menu .main_menu .navbar-nav li .dropdown-menu {
+      border-radius: 0; }
+      .zion-pub-head-menu .main_menu .navbar-nav li .dropdown-menu a {
+        padding: 5px 10px;
+        line-height: 30px; }
+
+.zion-extra-menu {
+  display: none !important; }
+
+#menu-pub-header-about, #menu-pub-add-looks, #menu-pub-press, #menu-pub-header-faq, #menu-pub-header-contact, #menu-pub-header-privacy, #menu-pub-header-terms {
+  display: none; }
+  @media (max-width: 767px) {
+    #menu-pub-header-about, #menu-pub-add-looks, #menu-pub-press, #menu-pub-header-faq, #menu-pub-header-contact, #menu-pub-header-privacy, #menu-pub-header-terms {
+      display: block; } }
+
+#menu-auth-header-profiles, #menu-pub-home {
+  display: none; }
+
+@media (max-width: 767px) {
+  #menu-pub-header-campaigns, #menu-pub-add-campaign, #menu-pub-header-stylists, #menu-auth-header-profiles {
+    display: none; } }
+
+.expend-collapse ul li {
+  display: none; }
+  @media (max-width: 767px) {
+    .expend-collapse ul li {
+      display: block; } }
+
+.mobile-avatar-nav {
+  display: none; }
+  @media (max-width: 767px) {
+    .mobile-avatar-nav {
+      display: block; } }
+  .mobile-avatar-nav .avatar {
+    position: absolute;
+    top: -32px;
+    right: 80px; }
+  .mobile-avatar-nav ul {
+    list-style: none; }
+    .mobile-avatar-nav ul li > a {
+      position: absolute;
+      top: -50px;
+      right: 60px;
+      color: #1f1e1f;
+      padding: 5px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'Raleway';
+      line-height: 55px; }
+  .mobile-avatar-nav img {
+    width: 30px;
+    height: 30px; }
+  .mobile-avatar-nav #menu-pub-header-stylist-apply,
+  .mobile-avatar-nav #menu-pub-header-inspiration,
+  .mobile-avatar-nav #menu-pub-header-stylists,
+  .mobile-avatar-nav #menu-pub-header-about,
+  .mobile-avatar-nav #menu-pub-header-faq,
+  .mobile-avatar-nav #menu-pub-header-contact,
+  .mobile-avatar-nav #menu-pub-header-privacy,
+  .mobile-avatar-nav #menu-pub-header-terms {
+    display: none; }

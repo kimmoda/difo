@@ -1,0 +1,238 @@
+.filter-hide {
+  display: none; }
+
+.filter-panel-container {
+  height: 50px; }
+  .filter-panel-container .filter-panel-cell {
+    height: inherit;
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: flex;
+    -ms-flex-direction: column;
+    /* TWEENER - IE 10 */
+    flex-direction: column;
+    -ms-flex-pack: center;
+    /* TWEENER - IE 10 */
+    justify-content: center;
+    text-align: center; }
+  .filter-panel-container .tag-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .filter-panel-container .tag-container .tag-area-wrap {
+      overflow: hidden;
+      height: 23px;
+      margin-bottom: 10px; }
+    .filter-panel-container .tag-container .ie {
+      width: 100%; }
+  .filter-panel-container .filter-toggle-btn:hover {
+    cursor: pointer; }
+  .filter-panel-container .filter-num {
+    display: none;
+    width: 23px;
+    height: 23px;
+    line-height: 22px;
+    font-size: 1em;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #656364; }
+  .filter-panel-container .filter-num-show {
+    display: inline-block; }
+  .filter-panel-container .order-container {
+    display: inline-block;
+    padding-bottom: 12px; }
+  .filter-panel-container .reset-filter-button {
+    padding-bottom: 12px;
+    color: #1f1e1f; }
+  .filter-panel-container .tag-scroll-btn {
+    width: 3%;
+    height: 65%;
+    color: #1f1e1f; }
+  .filter-panel-container .selected-tags {
+    padding: 0;
+    margin: 0 20px 10px;
+    overflow-x: auto;
+    white-space: nowrap; }
+    .filter-panel-container .selected-tags::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background: transparent; }
+    .filter-panel-container .selected-tags li {
+      display: inline-block;
+      padding: 4px 8px;
+      margin: 0 5px;
+      border-radius: 4px;
+      list-style: none;
+      font-size: 0.8em;
+      background-color: #e5e5e5; }
+    .filter-panel-container .selected-tags .content {
+      font-weight: bold; }
+    .filter-panel-container .selected-tags .filter-delete-btn, .filter-panel-container .selected-tags .role-delete-btn {
+      padding-left: 5px;
+      font-size: 10px; }
+      .filter-panel-container .selected-tags .filter-delete-btn:hover, .filter-panel-container .selected-tags .role-delete-btn:hover {
+        cursor: pointer; }
+
+@media (max-width: 991px) {
+  .tag-filter-container {
+    width: 100%; } }
+.tag-filter-container ul {
+  margin-left: -28px; }
+  .tag-filter-container ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 30px; }
+    .tag-filter-container ul li span {
+      font-size: 1em;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background-color: #f3f3f3; }
+      @media (max-width: 419px) {
+        .tag-filter-container ul li span {
+          font-size: 10px; } }
+      @media (min-width: 992px) {
+        .tag-filter-container ul li span:hover {
+          cursor: pointer;
+          color: #FFFFFF;
+          background-color: #656364; } }
+      .tag-filter-container ul li span.active {
+        color: #FFFFFF;
+        background-color: #656364; }
+
+.user-roles-filter {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border: 1px solid #ccc; }
+  .user-roles-filter .title {
+    display: block; }
+    .user-roles-filter .title:hover {
+      cursor: pointer; }
+    .user-roles-filter .title span {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase; }
+  .user-roles-filter .zion-hr-border {
+    border-top: 1px solid #f3f3f3; }
+  .user-roles-filter .filter-expand {
+    font-size: 14px; }
+  .user-roles-filter .checkbox-inline {
+    padding-left: 1.5rem;
+    font-size: 14px; }
+  .user-roles-filter .radio-inline {
+    font-size: 14px; }
+  .user-roles-filter span {
+    margin-right: 10px; }
+  .user-roles-filter .filter-unfold {
+    display: inline-block; }
+  .user-roles-filter .checkbox {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 16px;
+    display: none; }
+    .user-roles-filter .checkbox label {
+      margin: 0; }
+  .user-roles-filter .style-filter-show .checkbox {
+    display: inline-block; }
+  .user-roles-filter input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .user-roles-filter .control-indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    margin-right: 5px;
+    border: 1px solid #a5a5a5; }
+    .user-roles-filter .control-indicator:after {
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 3px;
+      width: 5px;
+      height: 8px;
+      content: '';
+      transform: rotate(45deg);
+      border: solid #FFFFFF;
+      border-width: 0 2px 2px 0; }
+  .user-roles-filter input:checked ~ .control-indicator {
+    background: #656364; }
+    .user-roles-filter input:checked ~ .control-indicator:after {
+      display: block; }
+  .user-roles-filter .btn {
+    margin-left: 30px; }
+    @media screen and (max-width: 576px) {
+      .user-roles-filter .btn {
+        margin-left: 0; } }
+  .user-roles-filter .filter-submit {
+    text-align: right;
+    font-size: 14px; }
+
+.empty-message {
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10rem; }
+
+.grid {
+  max-width: 1200px; }
+
+/* reveal grid after images loaded */
+.grid.are-images-unloaded {
+  opacity: 0; }
+
+.grid-item,
+.grid-col-sizer {
+  width: 23.5%; }
+
+.grid-gutter-sizer {
+  width: 2%; }
+
+/* hide by default */
+.grid.are-images-unloaded .image-grid-item {
+  opacity: 0; }
+
+.grid-item {
+  float: left; }
+
+.page-load-status {
+  padding-top: 20px;
+  text-align: center;
+  color: #777; }
+
+@media screen and (max-width: 992px) {
+  .grid-item,
+  .grid-col-sizer {
+    width: 32.6%; }
+
+  .grid-gutter-sizer {
+    width: 1%; } }
+@media screen and (max-width: 768px) {
+  .grid-item,
+  .grid-col-sizer {
+    width: 48.6%; }
+
+  .grid-gutter-sizer {
+    width: 2%; } }
+@media screen and (max-width: 576px) {
+  .grid-item,
+  .grid-col-sizer {
+    width: 100%; }
+
+  .grid-gutter-sizer {
+    width: 0; } }
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+.modal-body {
+  padding-top: 0; }
+
+.feed-content {
+  margin-top: 1rem;
+  margin-left: 1rem; }

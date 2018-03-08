@@ -1,0 +1,217 @@
+.zion-wrapper .zion-content {
+  width: 100%;
+  padding: 0; }
+  @media (max-width: 767px) {
+    .zion-wrapper .zion-content {
+      margin-top: 35px; } }
+
+.zion-stylist-container .zion-stylist-header {
+  position: relative;
+  height: 350px;
+  background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/trendsetter-home-bg.jpg") center;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .zion-stylist-container .zion-stylist-header {
+      height: 240px;
+      margin-bottom: 125px; } }
+  .zion-stylist-container .zion-stylist-header .zion-user-header {
+    padding-top: 200px; }
+    @media (max-width: 767px) {
+      .zion-stylist-container .zion-stylist-header .zion-user-header {
+        padding-top: 120px; } }
+  .zion-stylist-container .zion-stylist-header .avatar {
+    text-align: left;
+    margin-top: 55px; }
+    @media (max-width: 767px) {
+      .zion-stylist-container .zion-stylist-header .avatar {
+        text-align: center; } }
+    @media (min-width: 768px) {
+      .zion-stylist-container .zion-stylist-header .avatar {
+        padding-left: 80px;
+        margin-top: 90px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .zion-stylist-container .zion-stylist-header .avatar {
+        padding-left: 55px; } }
+  .zion-stylist-container .zion-stylist-header .advice-btn {
+    text-align: right;
+    margin-top: 100px; }
+    @media (max-width: 767px) {
+      .zion-stylist-container .zion-stylist-header .advice-btn {
+        text-align: center;
+        margin-top: 20px; } }
+    .zion-stylist-container .zion-stylist-header .advice-btn .follow-btn {
+      width: 100px;
+      padding: 6px 15px;
+      color: #1f1e1f;
+      background-color: #FFFFFF;
+      border: none; }
+    .zion-stylist-container .zion-stylist-header .advice-btn .following {
+      color: #FFFFFF;
+      background-color: #a5a5a5; }
+    .zion-stylist-container .zion-stylist-header .advice-btn .unfollow {
+      color: #FFFFFF;
+      background-color: #FF3141; }
+    .zion-stylist-container .zion-stylist-header .advice-btn .share-user-btn {
+      margin-left: 5px;
+      padding: 6px 12px;
+      background-color: #FFFFFF;
+      border: none; }
+    .zion-stylist-container .zion-stylist-header .advice-btn .user-react-button-group {
+      margin-bottom: 10px; }
+    .zion-stylist-container .zion-stylist-header .advice-btn .user-share-container {
+      display: none;
+      width: 260px;
+      height: 90px;
+      padding: 10px;
+      background-color: #FFFFFF;
+      border: 1px solid #a5a5a5;
+      border-radius: 4px; }
+    .zion-stylist-container .zion-stylist-header .advice-btn .show-share-container {
+      display: inline-block; }
+.zion-stylist-container .user-summary {
+  text-align: center; }
+.zion-stylist-container .stylist-content {
+  padding-left: 40px; }
+  @media (max-width: 767px) {
+    .zion-stylist-container .stylist-content {
+      margin-top: 20px;
+      padding-left: 0; } }
+.zion-stylist-container .looks-count-container {
+  margin-bottom: 20px; }
+  .zion-stylist-container .looks-count-container .look-count {
+    font-size: 20px;
+    font-weight: bold; }
+.zion-stylist-container .zion-user-summary .name {
+  margin-bottom: 10px;
+  font-size: 22px; }
+.zion-stylist-container .zion-user-summary .user-roles {
+  margin-bottom: 10px; }
+.zion-stylist-container .zion-user-summary .user-role-wrap {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .zion-stylist-container .zion-user-summary .user-role-wrap .user-role {
+    display: inline-block; }
+  .zion-stylist-container .zion-user-summary .user-role-wrap .dot {
+    margin-left: 2px;
+    margin-right: 5px; }
+.zion-stylist-container .zion-user-summary .like {
+  margin-bottom: 10px; }
+  .zion-stylist-container .zion-user-summary .like .number {
+    font-weight: bold; }
+.zion-stylist-container .zion-user-summary .location {
+  margin-bottom: 10px; }
+.zion-stylist-container .zion-user-summary .contact {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 12px;
+  background-color: #e5e5e5; }
+.zion-stylist-container .zion-user-summary .contact-icon {
+  color: #a5a5a5; }
+.zion-stylist-container .zion-user-summary .contact-content {
+  color: #1f1e1f; }
+.zion-stylist-container .zion-user-summary .link {
+  color: #1f1e1f; }
+.zion-stylist-container .zion-user-summary .social-link {
+  margin-bottom: 10px; }
+.zion-stylist-container .zion-user-summary .email {
+  margin-bottom: 10px;
+  word-break: break-all; }
+.zion-stylist-container .zion-user-summary .introduce {
+  color: #a5a5a5;
+  line-height: 20px; }
+.zion-stylist-container .show-more-look {
+  margin-bottom: 20px;
+  text-align: center; }
+.zion-stylist-container .zion-stylist-content {
+  position: relative;
+  margin-top: 80px;
+  padding-bottom: 200px; }
+  .zion-stylist-container .zion-stylist-content .grid {
+    margin-top: 0; }
+  .zion-stylist-container .zion-stylist-content .zion-feed-container {
+    padding: 0; }
+@media (max-width: 767px) {
+  .zion-stylist-container .lower-stylist-content {
+    margin-top: 220px; } }
+.zion-stylist-container .zion-style-intro h2 {
+  font-size: 22px; }
+.zion-stylist-container .zion-style-intro p {
+  font-size: 14px;
+  line-height: 22px; }
+.zion-stylist-container .zion-style-intro .panel .panel-heading {
+  font-size: 16px; }
+.zion-stylist-container .zion-style-intro .panel .panel-body {
+  font-size: 14px; }
+.zion-stylist-container .zion-style-intro .price {
+  font-weight: bold;
+  font-size: 16px; }
+.zion-stylist-container .zion-stylist-service {
+  padding: 0 15px; }
+  .zion-stylist-container .zion-stylist-service img {
+    width: 100%;
+    height: 100%; }
+  .zion-stylist-container .zion-stylist-service .service {
+    margin-bottom: 50px;
+    background-color: #FFFFFF; }
+    .zion-stylist-container .zion-stylist-service .service .image {
+      height: 260px; }
+    .zion-stylist-container .zion-stylist-service .service .content {
+      padding-right: 30px;
+      height: 260px; }
+      .zion-stylist-container .zion-stylist-service .service .content .title {
+        font-weight: bold; }
+      .zion-stylist-container .zion-stylist-service .service .content .text {
+        color: #656364; }
+      @media (max-width: 767px) {
+        .zion-stylist-container .zion-stylist-service .service .content {
+          padding: 0 30px; } }
+.zion-stylist-container .zion-stylist-review {
+  padding: 0 15px; }
+  .zion-stylist-container .zion-stylist-review .edit-btn {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    margin-bottom: 30px; }
+    .zion-stylist-container .zion-stylist-review .edit-btn a {
+      color: #656364; }
+  .zion-stylist-container .zion-stylist-review .review {
+    margin-bottom: 3px;
+    background-color: #FFFFFF; }
+    .zion-stylist-container .zion-stylist-review .review .avatar img {
+      margin: 10px 15px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .zion-stylist-container .zion-stylist-review .review .avatar img {
+          margin: 10px 35px; } }
+    @media (max-width: 767px) {
+      .zion-stylist-container .zion-stylist-review .review .content {
+        padding: 0 30px; } }
+    @media (min-width: 768px) {
+      .zion-stylist-container .zion-stylist-review .review .content {
+        padding-right: 30px; } }
+    .zion-stylist-container .zion-stylist-review .review .content .title {
+      font-weight: bold; }
+    .zion-stylist-container .zion-stylist-review .review .content .rate {
+      padding-bottom: 10px;
+      color: #a5a5a5; }
+      .zion-stylist-container .zion-stylist-review .review .content .rate .active {
+        color: #656364; }
+.zion-stylist-container .zion-stylist-profile, .zion-stylist-container .zion-stylist-contact {
+  padding: 0 15px;
+  background-color: #FFFFFF; }
+  .zion-stylist-container .zion-stylist-profile article, .zion-stylist-container .zion-stylist-contact article {
+    padding: 0 40px 20px 40px;
+    background-color: #FFFFFF; }
+    .zion-stylist-container .zion-stylist-profile article .title, .zion-stylist-container .zion-stylist-contact article .title {
+      font-weight: bold; }
+    .zion-stylist-container .zion-stylist-profile article p, .zion-stylist-container .zion-stylist-contact article p {
+      color: #656364; }
+  .zion-stylist-container .zion-stylist-profile .contact, .zion-stylist-container .zion-stylist-contact .contact {
+    height: 200px; }
+    .zion-stylist-container .zion-stylist-profile .contact p, .zion-stylist-container .zion-stylist-contact .contact p {
+      margin-bottom: 0; }
+    .zion-stylist-container .zion-stylist-profile .contact .social-link, .zion-stylist-container .zion-stylist-contact .contact .social-link {
+      margin-top: 10px; }
+      .zion-stylist-container .zion-stylist-profile .contact .social-link a, .zion-stylist-container .zion-stylist-contact .contact .social-link a {
+        padding-right: 10px;
+        color: #656364; }

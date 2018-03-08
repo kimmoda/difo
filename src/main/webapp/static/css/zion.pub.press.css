@@ -1,0 +1,54 @@
+.zion-wrapper > .zion-content {
+  margin-top: 45px; }
+
+.zion-wrapper > .container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px; }
+  .zion-wrapper > .container .header {
+    background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/press/press-bg-pattern.png") repeat;
+    height: 300px;
+    width: 100%;
+    margin-top: -20px; }
+    .zion-wrapper > .container .header .header-title {
+      text-align: center;
+      padding-top: 3rem; }
+      @media only screen and (max-width: 767px) {
+        .zion-wrapper > .container .header .header-title {
+          padding-top: 1rem; } }
+      .zion-wrapper > .container .header .header-title h1 {
+        font-weight: bold; }
+    .zion-wrapper > .container .header .header-subtitle {
+      text-align: center; }
+  .zion-wrapper > .container .content-container {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10rem; }
+    .zion-wrapper > .container .content-container .article-card {
+      padding: 0;
+      cursor: pointer; }
+      .zion-wrapper > .container .content-container .article-card .item-container {
+        background-color: white;
+        padding: 15px;
+        margin: 15px 5px 5px; }
+        .zion-wrapper > .container .content-container .article-card .item-container .cover-image {
+          width: auto;
+          max-height: 300px;
+          overflow: hidden; }
+          .zion-wrapper > .container .content-container .article-card .item-container .cover-image img {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%; }
+        .zion-wrapper > .container .content-container .article-card .item-container .title {
+          margin-top: 10px;
+          margin-bottom: 5px;
+          font-size: 20px;
+          font-weight: bold; }
+        .zion-wrapper > .container .content-container .article-card .item-container .author-info-container {
+          color: #656364;
+          margin-bottom: 20px; }
+        .zion-wrapper > .container .content-container .article-card .item-container .content {
+          color: #656364; }
+    .zion-wrapper > .container .content-container .article-card:nth-child(2n+1) {
+      clear: left; }

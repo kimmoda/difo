@@ -1,0 +1,324 @@
+@import "zion.util";
+
+.create-looks-title {
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    text-align: center;
+    #progressBar {
+        height: 100px;
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+.dash-border {
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+}
+
+.crater-container {
+    overflow: hidden;
+    position: relative;
+    .absolute {
+        position: absolute;
+        top: 0;
+    }
+    .flex {
+        display: -ms-flexbox; /* TWEENER - IE 10 */
+        display: flex;
+    }
+    .step-1 {
+        margin-left: 15px;
+    }
+    .step-2 {
+        width: 100%;
+        padding: 0 10px;
+        .thumbnail-container {
+            width: 100%;
+            height: 200px;
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 10px;
+                border: 2px solid $color-grey-light;
+                cursor: pointer;
+                margin: auto;
+            }
+        }
+        .preview-image-container {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            .annotation-container {
+                background-color: $color-black;
+                display: -ms-flexbox; /* TWEENER - IE 10 */
+                display: flex;
+                -ms-flex-direction: column; /* TWEENER - IE 10 */
+                flex-direction: column;
+                -ms-flex-pack: center; /* TWEENER - IE 10 */
+                justify-content: center;
+            }
+        }
+    }
+    .image-container {
+        margin-top: 2rem;
+        width: 98%;
+        background-color: $color-grey-extra-lightest;
+        .uploader-container {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            text-align: -webkit-center;
+            text-align: center;
+            .upload-button-container {
+                margin: 128px 0;
+                .cloudinary-button {
+                    display: inline-block;
+                    margin: 20px auto;
+                    width: 130px;
+                }
+                .zion-btn-grey {
+                    display: inline-block;
+                    margin: 20px auto;
+                    width: 130px;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .change-photo-button-container {
+        margin-top: 2rem;
+        .file {
+            color: $color-black;
+        }
+        .btn {
+            width: 100%;
+            font-size: 16px;
+        }
+        .delete-btn {
+            a {
+                display: inline-block;
+                font-size: 16px;
+            }
+        }
+        .change-btn {
+            padding-right: 0;
+            text-align: left;
+            @media(max-width: 991px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .change-photo {
+                overflow: hidden;
+                color: $color-grey-light;
+            }
+        }
+        .next-btn {
+            @media(max-width: 991px) {
+                margin-top: 10px;
+            }
+        }
+        .delete-btn {
+            @media(max-width: 991px) {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.file {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    -ms-flex-direction: column; /* TWEENER - IE 10 */
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: $color-grey-light;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    i {
+        font-size: 30px;
+    }
+    span {
+        padding-left: 10px;
+        font-size: 20px;
+        vertical-align: super;
+    }
+
+}
+
+.change-photo {
+    position: relative;
+}
+
+#file-selector {
+    position: absolute;
+    font-size: 500px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#changePhoto {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file:hover {
+    color: $color-grey-light;
+    text-decoration: none;
+}
+
+.feed-info-container {
+    margin-top: 2rem;
+    .form-group {
+        .title {
+            font-weight: bold;
+        }
+    }
+    .p {
+        font-size: 16px;
+    }
+    .save-feed-container {
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+    .feed-description {
+        resize: none;
+        height: 100px;
+        border: 1px solid $color-grey-extra-light;
+    }
+    .tag-container {
+        margin: 0 auto;
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+        border: 1px solid $color-grey-extra-light;
+        .tag-separate {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 0;
+            margin-left: -40px;
+            li {
+                list-style-type: none;
+                display: inline-block;
+                margin: 5px;
+                font-size: 13px;
+                .zion-filter-tag {
+                    font-size: .7em;
+                    font-weight: bold;
+                    padding: 3px 12px;
+                    border-radius: 10px;
+                    background-color: $color-grey-extra-light;
+                    @media (max-width: 419px) {
+                        font-size: 10px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &.active {
+                        color: $color-white;
+                        background-color: $color-grey-dark;
+                    }
+                }
+                .tag-delete-btn {
+                    margin-left: 5px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                .custom-tag:hover {
+                    cursor: inherit;
+                }
+            }
+        }
+    }
+    .add-tag-button {
+        border-radius: 0;
+    }
+    .custom-tag-input {
+        margin-top: 20px;
+    }
+}
+
+.save-feed-container {
+    .col-md-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .btn {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+    }
+    .cancel-btn {
+        margin-bottom: 0;
+        @media(max-width: 991px) {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        @media(max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .save-btn {
+        @media(max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .delete-btn {
+        @media(max-width: 991px) {
+            margin-top: 20px;
+        }
+        @media(max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.popover {
+    display: none !important;
+}
+
+.modalContext {
+    width: 300px;
+    padding: 30px;
+    .title {
+        margin-bottom: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+    .easypin-modal-btn {
+        float: right;
+        .easypin-modal-cancel {
+            color: $color-grey-light;
+            &:hover {
+                color: $color-grey-dark;
+            }
+        }
+    }
+    .btn {
+        margin-left: 10px;
+        border-radius: 4px;
+    }
+}
+
+.pinParent {
+    margin: 0 auto;
+}
+
+

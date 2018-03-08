@@ -1,0 +1,84 @@
+<div class="row" id="feed-{{id}}">
+    <div class="zion-feed-header col-md-8 col-md-offset-2">
+        <div class="author-info-container" data-user-id="{{this.author.userId}}">
+            <div class="feed-title">
+                <h4 class="feed-title-content">
+                    {{title}}
+                </h4>
+            </div>
+            <div class="feed-publish-time">
+                <p class="feed-publish-time-content">
+                    {{dateTimeFormat creationDate}}
+                </p>
+            </div>
+            <div class="author-content-container clearfix">
+                <div class="author-info">
+                    <img class="img-circle image-avatar img-responsive avatar"
+                         src="{{author.avatar}}" alt="avatar"/>
+                    <div class="author-name-content" title="{{this.author.displayName}}">
+                        {{this.author.displayName}}
+                    </div>
+                </div>
+                <button id="share-feed-button" class="share-feed-btn btn btn-default">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <span>Share</span>
+                </button>
+                <div class="feed-share-container">
+                    <div class="zion-social-share-plugin-container" id="zion-social-share-container"
+                         data-share-url="{{shortUrl}}" data-share-title="{{title}}" data-share-description="{{content}}"
+                         data-share-image="{{coverImage.url}}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zion-feed-content col-md-8 col-md-offset-2">
+        <div class="image annotation-container">
+            {{#if coverImage}}
+                {{#if coverImage.url}}
+                    <img class="img-responsive pin easypin-image" src="{{this.coverImage.url}}" alt="{{this.title}}"
+                         easypin-id="{{this.coverImage.publicId}}">
+                    <div class="cover-image-content">{{{coverImage.description}}}</div>
+                {{/if}}
+            {{/if}}
+            {{#if content}}
+                <div class="description">
+                    {{{contentFormat content false}}}
+                </div>
+            {{/if}}
+            {{#each this.mediaContent}}
+                <br>
+                {{#ifEqual mediaType "IMAGE"}}
+                    <img class="img-responsive pin easypin-image" src="{{url}}" alt="{{title}}" easypin-id="{{publicId}}">
+                    <div class="media-image-content">{{{description}}}</div>
+                {{/ifEqual}}
+                {{#ifEqual mediaType "VIDEO"}}
+                    <div class="video-container">
+                        <iframe src="{{url}}?control=0&rel=0&showinfo=0" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-video-content">{{{description}}}</div>
+                {{/ifEqual}}
+                {{#ifEqual mediaType "TEXT"}}
+                    <div class="text-container">
+                        {{{description}}}
+                    </div>
+                {{/ifEqual}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div style="display:none;" easypin-tpl>
+    <popover>
+        <div class="exPopoverContainer" shadow="true">
+            <div class="popBg">
+                <a href={[url]} target="_blank">
+                    <p class="annotation-title">{[title]}</p>
+                </a>
+            </div>
+        </div>
+    </popover>
+    <marker>
+        <div class="marker2" style="height: 15px; width: 15px">
+        </div>
+    </marker>
+</div>

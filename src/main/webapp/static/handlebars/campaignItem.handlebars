@@ -1,0 +1,56 @@
+{{#each looks}}
+    <div class="grid-item" data-campaign-id="{{this.id}}" data-status="{{this.taskStatus}}" data-enabled="{{this.enabled}}">
+        <div class="zion-campaign-container">
+            <div class="zion-campaign-content">
+                <div class="campaign-image" data-id="{{this.id}}">
+                    <img class="main-image img-responsive"
+                         src="{{#if
+                                 this.postUrlPreview.image}}{{this.postUrlPreview.image}}{{else}}https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/icon/defaultCampaignImage.png{{/if}}"
+                         alt="{{this.title}}">
+                    {{#if this.enabled}}
+                        {{#if this.isMine}}
+                            <div class="zion-campaign-item-status zion-campaign-item-MINE">
+                            <span>
+                                Mine
+                            </span>
+                            </div>
+                        {{else}}
+                            {{#if this.expired}}
+                                <div class="zion-campaign-item-cover zion-campaign-item-expired-cover"></div>
+                            {{/if}}
+                            {{#if this.completed}}
+                                <div class="zion-campaign-item-cover zion-campaign-item-completed-cover"></div>
+                            {{/if}}
+                            {{#unless this.active}}
+                                <div class="zion-campaign-item-status zion-campaign-item-{{this.taskStatus}}">
+                            <span>
+                                {{this.taskStatus}}
+                            </span>
+                                </div>
+                            {{/unless}}
+                        {{/if}}
+                    {{else}}
+                        <div class="zion-campaign-item-status zion-campaign-item-DELETED">
+                            <span>
+                                Deleted
+                            </span>
+                        </div>
+                    {{/if}}
+
+                    {{#if this.postUrlPreview.image}}
+                    {{else}}
+                        <div class="favicon">
+                            <img class="img-responsive" src="{{this.postUrlPreview.favicon}}" alt="">
+                        </div>
+                    {{/if}}
+                </div>
+
+                <div class="zion-campaign-footer">
+                    <div class="zion-campaign-title">
+                        <span>{{this.title}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}

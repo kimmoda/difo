@@ -1,0 +1,35 @@
+.pub-login-container .zion-login-modal-title {
+  float: left; }
+.pub-login-container .modal-body {
+  /* height: 30rem; */
+  /* .facebook-login-container{
+    .btn-facebook {
+      background-color: #4568B2;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      width: 300px;
+    }
+  } */
+  /* .google-login-container{
+    margin-top: 1rem;
+    .btn-google {
+      background-color: white;
+      border: 1px solid #484848;
+      color: #484848 !important;
+      border-radius: 4px;
+      width: 300px;
+    }
+    .google-icon{
+      background: url("https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Google-32.png");
+      width: 22px;
+      height: 22px;
+      float: left;
+      background-size: cover;
+    }
+  } */ }
+  .pub-login-container .modal-body .btn {
+    display: block;
+    margin-top: 1rem; }
+  .pub-login-container .modal-body .facebook-icon {
+    margin-right: 2rem; }

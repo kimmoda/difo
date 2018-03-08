@@ -1,0 +1,143 @@
+* {
+  margin: 0; }
+
+.zion-admin-container .title {
+  font-size: 16px;
+  font-weight: bold; }
+.zion-admin-container .look-feed-icon:hover {
+  cursor: pointer; }
+.zion-admin-container .look-feed-bt {
+  float: left; }
+.zion-admin-container .zion-social-share-plugin-container {
+  float: right; }
+.zion-admin-container .clear {
+  clear: both; }
+
+.container #feed-social-share-container .look-feed-icon {
+  width: 100%; }
+.container .dash-board {
+  border-bottom: 3px solid #656364;
+  border-radius: 0; }
+.container .overview-container {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 1rem 1rem 1rem; }
+  @media only screen and (min-width: 991px) {
+    .container .overview-container .border-left {
+      border-left: 2px solid #a5a5a5;
+      padding-left: 2rem;
+      margin-left: -1rem; } }
+  .container .overview-container .overview-title {
+    padding-top: 15px;
+    display: block;
+    padding-bottom: 10px;
+    font-size: 12px; }
+  .container .overview-container .overview-data-container {
+    padding-top: 1rem;
+    color: #656364;
+    padding-left: 1rem;
+    font-size: 10px; }
+    @media (max-width: 1199px) {
+      .container .overview-container .overview-data-container {
+        font-size: 8px; } }
+    .container .overview-container .overview-data-container .overview-icon {
+      text-align: center;
+      font-size: 30px; }
+    .container .overview-container .overview-data-container .overview-text {
+      padding-left: 2rem; }
+      .container .overview-container .overview-data-container .overview-text .overview-count {
+        display: block;
+        font-size: 15px; }
+      .container .overview-container .overview-data-container .overview-text .overview-label {
+        display: block; }
+.container .my-last-look-container {
+  margin-top: 2rem;
+  /* reveal grid after images loaded */
+  /* hide by default */ }
+  .container .my-last-look-container #feed-list {
+    margin-top: 10px; }
+  .container .my-last-look-container .add-look-button-container {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    border: 2px dashed #a5a5a5;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 30px;
+    margin-bottom: 22px; }
+    .container .my-last-look-container .add-look-button-container .content {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      font-size: 2em; }
+  .container .my-last-look-container .add-look-button-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 99%; }
+  .container .my-last-look-container .add-post-button .zion-feed-container img {
+    filter: none; }
+  .container .my-last-look-container .add-post-button .zion-feed-container .dash {
+    border: 2px dashed #a5a5a5; }
+  .container .my-last-look-container .add-post-button .zion-feed-container:hover {
+    background: white;
+    cursor: pointer; }
+  .container .my-last-look-container .zion-feed-container {
+    padding: 0; }
+    .container .my-last-look-container .zion-feed-container .zion-feed-content {
+      border: 2px dashed white;
+      border-radius: 10px;
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 97%; }
+      .container .my-last-look-container .zion-feed-container .zion-feed-content .edit-button-container {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        line-height: 32px;
+        right: 10px;
+        bottom: 10px; }
+      .container .my-last-look-container .zion-feed-container .zion-feed-content .main-image {
+        width: 100%; }
+        .container .my-last-look-container .zion-feed-container .zion-feed-content .main-image:hover {
+          filter: brightness(50%); }
+    .container .my-last-look-container .zion-feed-container .zion-feed-footer .tag {
+      display: none; }
+  .container .my-last-look-container .interact:hover {
+    cursor: default; }
+  .container .my-last-look-container .stamp {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 23.5%; }
+  .container .my-last-look-container .grid {
+    width: 100%; }
+  .container .my-last-look-container .grid.are-images-unloaded {
+    opacity: 0; }
+  .container .my-last-look-container .grid-item,
+  .container .my-last-look-container .grid-col-sizer {
+    width: 23.5%; }
+  .container .my-last-look-container .grid-gutter-sizer {
+    width: 2%; }
+  .container .my-last-look-container .grid.are-images-unloaded .image-grid-item {
+    opacity: 0; }
+  .container .my-last-look-container .grid-item {
+    float: left; }
+  .container .my-last-look-container .page-load-status {
+    padding-top: 20px;
+    text-align: center;
+    color: #777; }
+  @media screen and (max-width: 576px) {
+    .container .my-last-look-container .grid-item,
+    .container .my-last-look-container .grid-col-sizer {
+      width: 48%; }
+    .container .my-last-look-container .grid-gutter-sizer {
+      width: 2%; }
+    .container .my-last-look-container .stamp {
+      width: 48%; } }

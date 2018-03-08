@@ -1,0 +1,17 @@
+{{#each data}}
+<li class="list-group-item">
+    <span>{{creationDate}}</span>
+    <select class="feed-rank-selection" data-feedid="{{id}}">
+        <option value="top" data-feedid="{{id}}" {{{topFeedChecked}}}>TOP</option>
+        <option value="good" data-feedid="{{id}}" {{{goodFeedChecked}}}>GOOD</option>
+        <option value="fair" data-feedid="{{id}}" {{{fairFeedChecked}}}>FAIR</option>
+        <option value="poor" data-feedid="{{id}}" {{{poorFeedChecked}}}>POOR</option>
+    </select>
+    
+    <a href="{{feedUrl}}">
+        <img src="{{coverImageUrl}}" class="rounded float-left"></img>
+    </a>
+    <span>{{title}}</span> <span>({{ authorName }} | {{authorRoles}})</span>--<span>{{feedStatus}}</span>
+    <button type="button" class="btn btn-warning zion-delete-feed" data-feedid="{{id}}">Delete</button>
+</li>
+{{/each}}

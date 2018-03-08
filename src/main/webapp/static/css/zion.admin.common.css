@@ -1,0 +1,9 @@
+.zion-hide {
+  display: none; }
+
+.zion-input-warning {
+  border: 1px solid red; }
+
+.zion-thumbnail {
+  height: 150px;
+  width: 150px; }

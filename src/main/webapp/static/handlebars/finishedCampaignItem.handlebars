@@ -1,0 +1,22 @@
+{{#each task}}
+    <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="row-container row" data-campaign-id="{{this.task.id}}">
+            <div class="col-xs-2 col-sm-2">
+                <div class="preview-image" style="background-image: url('{{this.task.favicon}}')">
+
+                </div>
+            </div>
+            <div class="col-xs-7 col-sm-7 history-title">
+                {{this.task.title}}
+            </div>
+            <div class="col-xs-3 col-sm-3 zion-campaign-reword">
+                <i class="fa fa-plus zion-campaign-reword-icon"></i>
+                <span class="zion-campaign-reward-text">
+                    {{amount}}
+                    <br>
+                    {{currency}}
+                </span>
+            </div>
+        </div>
+    </div>
+{{/each}}

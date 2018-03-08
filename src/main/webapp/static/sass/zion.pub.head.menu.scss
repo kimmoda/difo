@@ -1,0 +1,164 @@
+@import "zion.util";
+
+.zion-pub-head-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    z-index: 333;
+    background: $color-white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) !important;
+    .navbar-collapse {
+        position: relative;
+        //top: -8px;
+    }
+    .logo {
+        img {
+            height: 65px;
+        }
+    }
+    .main_menu {
+        .navbar {
+            margin-bottom: 0;
+        }
+        .navbar-nav {
+            margin: 0 -15px;
+            text-align: center;
+            .mobile-menu-option {
+                display: none;
+                @media(max-width: 767px) {
+                    display: block;
+                }
+                #menu-auth-header-profiles {
+                    display: none;
+                }
+            }
+           .active {
+               span {
+                   font-weight: bold;
+               }
+           }
+           li {
+               &:nth-child(n+2) {
+                   @media (max-width: 767px) {
+                       border-top: 1px solid $color-black-light;
+                   }
+               }
+                &:hover {
+                    background: none;
+                    color: $color-white;
+                }
+                &:focus {
+                    background: none;
+                    color: $color-white;
+                }
+	            a {
+	                color: $color-black;
+	                padding: 5px 16px;
+	                font-size: 14px;
+	                font-family: 'Raleway';
+	                font-weight: 500;
+	                line-height: 55px;
+                    @media (max-width: 767px) {
+                        line-height: 30px;
+                    }
+	                .highlight {
+                        padding: 7px 22px;
+                        border: 2px solid $color-grey-dark;
+                        border-radius: 30px;
+                        @media (max-width: 767px) {
+                            border: none;
+                            border-radius: 0;
+                        }
+                    }
+	                &:hover {
+	                    color: $color-black;
+	                }
+	            }
+	            .avatar {
+		              img {
+		                width: 30px;
+		                height: 30px;
+		              }
+                }
+                .dropdown-menu {
+                    border-radius: 0;
+                    a {
+                        padding: 5px 10px;
+                        line-height: 30px;
+                    }
+                }
+           }
+        }
+    }
+}
+
+.zion-extra-menu {
+    display: none !important;
+}
+
+#menu-pub-header-about, #menu-pub-add-looks, #menu-pub-press, #menu-pub-header-faq, #menu-pub-header-contact, #menu-pub-header-privacy, #menu-pub-header-terms {
+    display: none;
+    @media(max-width: 767px) {
+        display: block;
+    }
+}
+
+#menu-auth-header-profiles, #menu-pub-home {
+    display: none;
+}
+
+#menu-pub-header-campaigns, #menu-pub-add-campaign, #menu-pub-header-stylists, #menu-auth-header-profiles {
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
+
+.expend-collapse ul li{
+    display: none;
+    @media(max-width: 767px) {
+        display: block;
+    }
+}
+
+.mobile-avatar-nav {
+    display: none;
+    @media(max-width: 767px) {
+        display: block;
+    }
+    .avatar {
+        position: absolute;
+        top: -32px;
+        right: 80px;
+    }
+    ul {
+        list-style: none;
+        li > a {
+            position: absolute;
+            top: -50px;
+            right: 60px;
+            color: $color-black;
+            padding: 5px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: 'Raleway';
+            line-height: 55px;
+        }
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    #menu-pub-header-stylist-apply,
+    #menu-pub-header-inspiration,
+    #menu-pub-header-stylists,
+    #menu-pub-header-about,
+    #menu-pub-header-faq,
+    #menu-pub-header-contact,
+    #menu-pub-header-privacy,
+    #menu-pub-header-terms {
+        display: none;
+    }
+}
+

@@ -1,0 +1,103 @@
+@import "zion.util";
+
+.zion-wrapper {
+    .zion-content {
+        width: 100%;
+    }
+}
+
+.zion-home-container {
+    background-color: $color-grey-extra-lightest;
+    .header {
+        margin-bottom: 20px;
+        /* Create a 16:9 empty container for iframe stretch to fit it.
+       Container width is 100% with its' parent element.
+       Set padding-bottom 56.25% to make container height is 56.25% of its width */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+    }
+    .campaign-introduce {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .introduce-title {
+        font-weight: bold;
+    }
+    .introduce-text {
+        margin-bottom: 50px;
+    }
+    .intro-title {
+        font-weight: bold;
+    }
+    .title {
+        padding: 30px 0;
+        font-size: 20px;
+    }
+    .intro-step-container {
+        position: relative;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        padding: 20px;
+        background-color: $color-white;
+        border: 1px solid $color-grey-extra-light;
+        border-radius: 5px;
+    }
+    .intro-icon {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .intro-step-mark {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        margin-left: -14px;
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 50%;
+        color: white;
+        font-weight: bold;
+        background-color: $color-grey-light;
+    }
+    .latest-campaign {
+        padding: 0 10%;
+        background-color: $color-white;
+    }
+    .see-more-btn {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .zion-wrapper {
+        .zion-content {
+            margin-top: 35px;
+            padding-bottom: 100px;
+        }
+    }
+    .zion-home-container {
+        .header-desc {
+            font-size: $zion-text-font-size-minus-2;
+        }
+        .intro-step-container {
+            width: 80%;
+        }
+    }
+}
+
+

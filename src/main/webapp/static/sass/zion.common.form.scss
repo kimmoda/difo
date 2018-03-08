@@ -1,0 +1,50 @@
+@import "zion.util";
+
+.zion-submit-error-message {
+    color: $color-danger;
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+}
+
+.zion-input-error-indicator {
+  border-bottom: 1px solid $color-danger !important;
+}
+
+.zion-form {
+  i {
+    font-size: 25px;
+  }
+  .alert > span {
+    padding-left: 10px;
+  }
+  input, textarea, select {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 13px;
+  }
+  .zion-form-compulsory {
+    vertical-align: sub;
+    color: red;
+  }
+  .zion-form-error-summary {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: $color-danger-lighter;
+    color: $color-danger;
+    border: 1px solid $color-danger-lighter;
+    margin-top: 10px;
+    margin-bottom:10px;
+  }
+
+  .zion-input-error-text {
+    color: $color-danger;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .form-group {
+    label {
+       font-weight: 400;
+       color: $color-grey-dark;
+    }
+  }
+}

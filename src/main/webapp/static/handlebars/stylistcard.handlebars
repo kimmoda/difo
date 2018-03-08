@@ -1,0 +1,54 @@
+{{#each users}}
+    <section class="zion-stylist-item-container {{../config.customCss}} {{../config.grid}} col-sm-6 col-xs-12">
+        <a class="content" href="{{stylistUrl}}">
+            <div class="avatar col-sm-12">
+                {{#if avatar}}
+                    <img class="zion-circle-avatar-lg" src="{{avatar}}" alt="avatar" />
+                {{else}}
+                    <img class="zion-circle-avatar-lg"  src="https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/avatar.png" alt="avatar" />
+                {{/if}}
+            </div>
+            <div class="title col-sm-12">
+                <h3 class="username" title="{{displayName}}">{{displayName}}</h3>
+            </div>
+            {{#if ../config.showRating}}
+                <div class="rate col-sm-12">
+                    <span class="fa fa-lg fa-star active" data-rating="1"></span>
+                    <span class="fa fa-lg fa-star active" data-rating="2"></span>
+                    <span class="fa fa-lg fa-star active" data-rating="3"></span>
+                    <span class="fa fa-lg fa-star active" data-rating="4"></span>
+                    <span class="fa fa-lg fa-star" data-rating="5"></span>
+                </div>
+            {{/if}}
+            <div class="role col-sm-12 no-padding">
+                {{#if roles}}
+                    {{#if approvedTrendsetter}}
+                        {{#each roles}}
+                            {{{listUserRoles this}}}
+                        {{/each}}
+                    {{else}}
+                        {{{listUserRoles "DEFAULT"}}}
+                    {{/if}}
+                {{/if}}
+            </div>
+            <div class="location col-sm-12">
+                {{#if location}}
+                    <i class="fa fa-lg fa-map-marker" aria-hidden="true"></i>
+                    <span>{{location}}</span>
+                {{/if}}
+            </div>
+            {{#if ../config.showSummary}}
+                <p class="summary col-sm-12">
+                    {{#if introSummary}}
+                        {{introSummary}}
+                    {{/if}}
+                </p>
+            {{/if}}
+            <div class="look col-sm-12">
+                    <span>
+                        LOOKS ({{feedCount}})
+                    </span>
+            </div>
+        </a>
+    </section>
+{{/each}}

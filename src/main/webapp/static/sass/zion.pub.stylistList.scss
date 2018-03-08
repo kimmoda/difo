@@ -1,0 +1,452 @@
+@import "zion.util";
+
+.filter-hide {
+    display: none;
+}
+.filter-panel-container {
+    height: 50px;
+    .filter-panel-cell {
+        height: inherit;
+        display: -ms-flexbox; /* TWEENER - IE 10 */
+        display: flex;
+        -ms-flex-direction: column; /* TWEENER - IE 10 */
+        flex-direction: column;
+        -ms-flex-pack: center; /* TWEENER - IE 10 */
+        justify-content: center;
+        text-align: center;
+    }
+    .tag-container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        .tag-area-wrap {
+            overflow: hidden;
+            height: 23px;
+            margin-bottom: 10px;
+        }
+        .ie {
+            width: 100%;
+        }
+    }
+    .filter-toggle-btn {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .filter-num {
+        display: none;
+        width: 23px;
+        height: 23px;
+        line-height: 22px;
+        font-size: 1em;
+        border-radius: 50%;
+        color: $color-white;
+        background-color: $color-grey-dark;
+    }
+    .filter-num-show {
+        display: inline-block;
+    }
+    .order-container {
+        display: inline-block;
+        padding-bottom: 12px;
+    }
+    .reset-filter-button {
+        padding-bottom: 12px;
+        color: $color-black;
+    }
+    .tag-scroll-btn {
+        width: 3%;
+        height: 65%;
+        color: $color-black;
+    }
+    .selected-tags {
+        padding: 0;
+        margin: 0 20px 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            background: transparent;
+        }
+        li {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 0 5px;
+            border-radius: 4px;
+            list-style: none;
+            font-size: 0.8em;
+            background-color: $color-grey-extra-light;
+        }
+        .content {
+            font-weight: bold;
+        }
+        .filter-delete-btn, .role-delete-btn, .country-delete-btn {
+            padding-left: 5px;
+            font-size: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.tag-filter-container {
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+    ul {
+        margin-left: -28px;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 30px;
+            span {
+                font-size: 1em;
+                padding: 10px 15px;
+                border-radius: 10px;
+                background-color: $color-grey-extra-lighter;
+                @media (max-width: 419px) {
+                    font-size: 10px;
+                }
+                @media (min-width: 992px) {
+                    &:hover {
+                        cursor: pointer;
+                        color: $color-white;
+                        background-color: $color-grey-dark;
+                    }
+                }
+                &.active {
+                    color: $color-white;
+                    background-color: $color-grey-dark;
+                }
+            }
+        }
+    }
+}
+
+.user-roles-filter {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    .title {
+        display: block;
+        &:hover {
+            cursor: pointer;
+        }
+        span {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    .zion-hr-border {
+        border-top: 1px solid $color-grey-extra-lighter;
+    }
+    .filter-expand {
+        font-size: 14px;
+    }
+    .checkbox-inline{
+        padding-left: 1.5rem;
+        font-size: 14px;
+    }
+    .radio-inline{
+        font-size: 14px;
+    }
+    span {
+        margin-right: 10px;
+    }
+    .filter-unfold {
+        display: inline-block;
+    }
+
+    .checkbox {
+        width: 100%;
+        font-weight: lighter;
+        font-size: 16px;
+        display: none;
+        label {
+            margin: 0;
+        }
+    }
+    .style-filter-show {
+        .checkbox {
+            display: inline-block;
+        }
+    }
+    input[type='checkbox'] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    .control-indicator {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 12px;
+        width: 12px;
+        margin-right: 5px;
+        border: 1px solid $color-grey-light;
+        &:after {
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 3px;
+            width: 5px;
+            height: 8px;
+            content: '';
+            transform: rotate(45deg);
+            border: solid $color-white;
+            border-width: 0 2px 2px 0;
+        }
+    }
+
+    input:checked ~ .control-indicator {
+        background: $color-grey-dark;
+        &:after {
+            display: block;
+        }
+    }
+
+    .btn {
+        margin-left: 30px;
+        @media screen and (max-width: 576px) {
+            margin-left: 0;
+        }
+    }
+
+    .filter-submit {
+        text-align: right;
+        font-size: 14px;
+    }
+
+    .location{
+        margin-top: 10px;
+    }
+
+    .location-options-container{
+        margin-top: 10px;
+        padding: 0;
+        text-align: left;
+    }
+}
+
+.empty-message{
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10rem;
+}
+
+
+
+
+/********************************************/
+//
+//.tag-filter-container {
+//    margin-top: 10px;
+//    margin-bottom: 40px;
+//    text-align: center;
+//    @media (max-width: 991px) {
+//        width: 100%;
+//    }
+//    ul {
+//        margin-left: -28px;
+//        li {
+//            list-style-type: none;
+//            display: inline-block;
+//            margin-right: 10px;
+//            span {
+//                font-size: 1em;
+//                padding: 10px 15px;
+//                border-radius: 10px;
+//                background-color: $color-grey-extra-light;
+//                @media (max-width: 419px) {
+//                    font-size: 10px;
+//                }
+//                &:hover {
+//                    cursor: pointer;
+//                    color: $color-white;
+//                    background-color: $color-grey-dark;
+//                }
+//                &.active {
+//                    color: $color-white;
+//                    background-color: $color-grey-dark;
+//                }
+//            }
+//        }
+//    }
+//}
+
+.profile-count {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+    span {
+        padding-right: 5px;
+    }
+}
+
+.zion-stylist-item-container {
+    margin-bottom: 5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    .content {
+        display: inline-block;
+        //height: 410px;
+        width: 100%;
+        background-color: white;
+        &:hover, &:focus {
+            .look {
+                background-color: $color-grey-dark;
+                span {
+                    color: $color-white;
+                }
+            }
+        }
+        .title {
+            color: $color-black;
+            .username {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 25px;
+                overflow: hidden;
+                font-weight: bold;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .rate {
+            margin-bottom: 20px;
+            span {
+                padding: 0 5px;
+                color: $color-grey-light;
+            }
+            .active {
+                color: $color-grey-dark;
+            }
+        }
+        .role {
+            margin-bottom: 20px;
+        }
+        .dot {
+            margin-left: 2px;
+            margin-right: 5px;
+        }
+        .role-content {
+            font-size: 12px;
+            color: $color-black;
+        }
+        .user-role {
+            padding: 5px 7px;
+            margin-left: 1px;
+            margin-right: 1px;
+            color: $color-black;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: $color-grey-extra-lighter;
+        }
+        .location {
+            height: 20px;
+            margin-bottom: 20px;
+            color: $color-grey-dark;
+            font-size: 12px;
+            span {
+                display: inline-block;
+                font-size: 14px;
+                font-weight: bold;
+                color: $color-black;
+            }
+            i {
+                padding-right: 5px;
+            }
+        }
+        .summary {
+            margin-bottom: 20px;
+            height: 35px;
+            overflow: hidden;
+            font-size: 12px;
+            line-height: 1.5;
+            color: $color-black;
+        }
+    }
+    .avatar {
+        margin-top: 40px;
+    }
+    .look {
+        padding: 15px;
+        background-color: $color-grey-extra-lighter;
+        span {
+            display: inline-block;
+            font-size: 20px;
+            color: $color-black;
+        }
+    }
+}
+
+.small-size {
+    .content {
+        border: 2px solid $color-grey-extra-lighter;
+        //height: 310px;
+        .avatar {
+            margin-top: 20px;
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+        .title {
+            margin-top: 10px;
+            .username {
+                font-size: 20px;
+                height: 45px;
+                @media(min-width: 992px) {
+                    height: 22px;
+                }
+            }
+        }
+        .role {
+            margin-bottom: 10px;
+            @media(min-width: 992px) and (max-width: 1199px) {
+                height: 85px;
+            }
+            @media (min-width: 1200px) {
+                height: 60px;
+            }
+        }
+        .user-role {
+            display: inline-block;
+            margin: 3px;
+            font-size: 10px;
+        }
+        .location {
+            margin-bottom: 10px;
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+    .look {
+        padding: 10px 40px;
+        span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+
+.banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        color: $color-black;
+    }
+}

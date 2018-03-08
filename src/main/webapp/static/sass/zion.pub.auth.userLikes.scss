@@ -1,0 +1,39 @@
+@import "zion.util";
+
+.my-looks {
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.zion-stylist-complete-container {
+    padding-top: 50px;
+    .title {
+        padding: 30px;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .content {
+        color: $color-grey-dark;
+        font-size: 14px;
+        text-align: center;
+    }
+    .empty-url {
+        margin-top: 45px;
+        text-align: center;
+    }
+}
+
+.zion-stylist-content {
+    .grid {
+        .grid-item {
+            .zion-feed-content {
+                height: auto;
+                padding-bottom: 0;
+                overflow: hidden;
+                border-radius: 10px;
+                border: 1px solid white;
+            }
+        }
+    }
+}

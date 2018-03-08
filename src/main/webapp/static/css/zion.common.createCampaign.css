@@ -1,0 +1,88 @@
+.zion-create-campaign-header-title {
+  padding-top: 15px;
+  font-size: 20px;
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    .zion-create-campaign-header-title {
+      display: none; } }
+
+.create-campaign {
+  background: white;
+  padding: 0 15px 15px; }
+  .create-campaign .header-balance {
+    margin-top: 15px; }
+    .create-campaign .header-balance .row-container {
+      position: relative; }
+      .create-campaign .header-balance .row-container .count {
+        margin-left: 50px;
+        position: absolute;
+        right: 0; }
+        .create-campaign .header-balance .row-container .count .currency {
+          font-size: 10px; }
+  .create-campaign .introduce-container {
+    margin-top: 15px;
+    border: 1px solid #e5e5e5;
+    padding: 5px 5px 5px 5px;
+    font-size: 11px;
+    background-color: #e6e6e6; }
+    .create-campaign .introduce-container p {
+      font-size: 10px;
+      margin-bottom: 0; }
+    .create-campaign .introduce-container .important {
+      color: red;
+      font-size: 11px;
+      font-weight: bold; }
+  .create-campaign .not-enough {
+    margin-top: 15px; }
+  .create-campaign .create-campaign-container .campaign-container {
+    margin-top: 15px; }
+    .create-campaign .create-campaign-container .campaign-container .detail {
+      font-size: 9px; }
+    .create-campaign .create-campaign-container .campaign-container .disable-mask {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); }
+    .create-campaign .create-campaign-container .campaign-container .url {
+      margin-top: 15px; }
+    .create-campaign .create-campaign-container .campaign-container .description textarea {
+      resize: none; }
+    .create-campaign .create-campaign-container .campaign-container .preview {
+      margin-top: 15px; }
+      .create-campaign .create-campaign-container .campaign-container .preview h3 {
+        margin-top: 0; }
+      .create-campaign .create-campaign-container .campaign-container .preview .preview-image {
+        width: 80%;
+        max-width: 800px; }
+      .create-campaign .create-campaign-container .campaign-container .preview .caption {
+        border-left: 5px solid #e6e6e6; }
+        .create-campaign .create-campaign-container .campaign-container .preview .caption .title .preview-icon {
+          float: left;
+          margin-top: 3px;
+          height: 20px;
+          width: 20px;
+          margin-right: 5px; }
+    .create-campaign .create-campaign-container .campaign-container .promotion-methods {
+      border: 1px solid #e5e5e5;
+      padding: 0 15px 5px 15px; }
+      .create-campaign .create-campaign-container .campaign-container .promotion-methods .radio {
+        margin-top: 15px; }
+    .create-campaign .create-campaign-container .campaign-container .save-button-container [class*="col-"] {
+      margin-top: 15px; }
+  @media (max-width: 767px) {
+    .create-campaign .zion-wrapper .zion-content {
+      margin-top: 35px; } }
+
+.mandatory:after {
+  content: '*';
+  color: red; }
+
+@media only screen and (min-width: 768px) {
+  .create-campaign {
+    padding-top: 1px; } }
+@media only screen and (max-width: 767px) {
+  #create_campaign {
+    height: 100%; }
+    #create_campaign .modal-dialog {
+      height: 100%; }
+      #create_campaign .modal-dialog .modal-content {
+        height: 100%; } }

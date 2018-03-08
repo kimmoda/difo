@@ -1,0 +1,16 @@
+<div class="zion-user-header container">
+    <div class="avatar col-sm-6">
+        <img class="zion-circle-avatar-lg" src="{{avatar}}" alt="avatar" />
+    </div>
+    <div class="advice-btn col-sm-6">
+            <div class="user-react-button-group">
+                {{#if notMine}}
+                    <button id="follow-user-button" class="follow-btn btn btn-default {{following}}">{{followText}}</button>
+                {{/if}}
+                <button id="share-user-button" class="share-user-btn btn btn-default"><i class="fa fa-share-alt" aria-hidden="true"></i></button>
+            </div>
+            <div class="user-share-container">
+                <div id="zion-user-social-share-container" class="zion-social-share-plugin-container" data-share-url="{{shortUrl}}" data-share-title="{{title}}" data-share-description="{{content}}" data-share-image="{{photo.url}}"></div>
+            </div>
+    </div>
+</div>

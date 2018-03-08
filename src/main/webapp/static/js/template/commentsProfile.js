@@ -1,0 +1,6 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['commentsProfile'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"profile-comments-container\">\n    <div>\n        <span class=\"title\">Comments</span>\n    </div>\n    <div class=\"profile-sender-container zion-form\">\n        <div class=\"zion-input-error-text zion-hide\" id=\"comment-error\"></div>\n        <textarea class=\"form-control comment-input\" placeholder=\"Add a comment...\"></textarea>\n        <div class=\"profile-comments-submit btn btn-primary\">\n            SEND\n            <div id=\"grecaptcha-id\" class=\"zion-grecaptcha\">\n            </div>\n        </div>\n    </div>\n    <div class=\"comment-container\" id=\"comment-container\">\n        <div class=\"user-comments\" id=\"user-comments\"></div>\n        <div class=\"load-more-button-container hidden\" id=\"load-more-button-container\">\n            <div class=\"load-more-button btn zion-btn-white\" id=\"load-more-button\">SHOW MORE</div>\n        </div>\n    </div>\n</div>";
+},"useData":true});
+})();

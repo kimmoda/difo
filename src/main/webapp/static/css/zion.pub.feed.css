@@ -1,0 +1,41 @@
+.zion-feed-container {
+  padding: 6px 12px;
+  font-family: "Open Sans"; }
+  .zion-feed-container img {
+    display: block;
+    max-width: 100%; }
+  .zion-feed-container:hover {
+    background-color: #f3f3f3; }
+  .zion-feed-container .author-info-container {
+    margin: 8px 8px; }
+    .zion-feed-container .author-info-container .image-avatar {
+      float: left;
+      height: 26px;
+      width: 26px;
+      margin-right: 1rem; }
+    .zion-feed-container .author-info-container .author-name {
+      padding-top: 5px;
+      font-size: 12px; }
+    .zion-feed-container .author-info-container:hover {
+      cursor: pointer; }
+  .zion-feed-container .main-image:hover {
+    cursor: pointer; }
+  .zion-feed-container .action-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 36px; }
+  .zion-feed-container .tag {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+    color: #6284c5; }
+    .zion-feed-container .tag span:hover {
+      cursor: pointer; }
+  .zion-feed-container .interact {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 11px; }
+    .zion-feed-container .interact i {
+      padding: 0 1px; }
+    .zion-feed-container .interact .like {
+      color: #C42424; }

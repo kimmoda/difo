@@ -1,0 +1,37 @@
+@import "zion.util";
+
+.zion-social-share-plugin-container {
+    text-align: right;
+    margin-bottom: 10px;
+    span {
+        margin-right: 20px;
+        a {
+            font-size: 20px;
+            color: $color-grey-dark;
+            &:hover {
+                color: $color-grey-light;
+            }
+        }
+    }
+    .short-link-container {
+        margin-top: 10px;
+        .copy-short-link-url-action {
+            margin-left: 10px;
+            color: $color-blue;
+            font-size: 10px;
+            i {
+                font-size: 20px;
+                color: $color-grey-dark;
+                &:hover {
+                    color: $color-grey-light;
+                }
+            }
+
+        }
+        .copy-short-link-input {
+            width: 73%;
+            padding: 3px 2px;
+            font-size: 12px;
+        }
+    }
+}

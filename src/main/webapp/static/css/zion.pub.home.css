@@ -1,0 +1,75 @@
+.zion-wrapper .zion-content {
+  width: 100%; }
+
+.zion-home-container {
+  background-color: #f8f8f8; }
+  .zion-home-container .header {
+    margin-bottom: 20px;
+   /* Create a 16:9 empty container for iframe stretch to fit it.
+  Container width is 100% with its' parent element.
+  Set padding-bottom 56.25% to make container height is 56.25% of its width */ }
+    .zion-home-container .header .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0; }
+      .zion-home-container .header .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none; }
+  .zion-home-container .campaign-introduce {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 5%;
+    text-align: center; }
+  .zion-home-container .introduce-title {
+    font-weight: bold; }
+  .zion-home-container .introduce-text {
+    margin-bottom: 50px; }
+  .zion-home-container .intro-title {
+    font-weight: bold; }
+  .zion-home-container .title {
+    padding: 30px 0;
+    font-size: 20px; }
+  .zion-home-container .intro-step-container {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px; }
+  .zion-home-container .intro-icon {
+    padding: 20px 0;
+    width: 100%; }
+  .zion-home-container .intro-step-mark {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -14px;
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    background-color: #a5a5a5; }
+  .zion-home-container .latest-campaign {
+    padding: 0 10%;
+    background-color: #FFFFFF; }
+  .zion-home-container .see-more-btn {
+    margin-top: 20px;
+    text-align: center; }
+
+@media (max-width: 767px) {
+  .zion-wrapper .zion-content {
+    margin-top: 35px;
+    padding-bottom: 100px; }
+
+  .zion-home-container .header-desc {
+    font-size: 12px; }
+  .zion-home-container .intro-step-container {
+    width: 80%; } }

@@ -1,0 +1,9 @@
+.zion-panel {
+  border-radius: 0;
+  border: 1px solid #f3f3f3; }
+  .zion-panel .panel-heading {
+    background-color: #e5e5e5;
+    font-size: 16px;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 15px;
+    border-radius: 0; }

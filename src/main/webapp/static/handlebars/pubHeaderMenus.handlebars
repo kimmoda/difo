@@ -1,0 +1,45 @@
+<div class="main_menu">
+    <div class="navbar text-right">
+        <div class="navbar-header">
+            <div>
+                <button id="header-menu" type="button" class="navbar-toggle collapse-header-menu" data-toggle="collapse"
+                        data-target=".menu-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse menu-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                {{#each pubHeaderMenus}}
+                    <li class="{{#if active}}active{{/if}} {{#if isMobile}}zion-mobile-visible{{/if}} {{#if isDesktop}}zion-desktop-visible{{/if}}" id="{{this.id}}">
+                        {{#if disableHyperlink}}
+                            <a href="javascript:void(0);" title="menu-{{this.label}}">{{this.label}}</a>
+                        {{else}}
+                            <a href="{{this.url}}"
+                               {{#if externalLink}}target="_blank"{{/if}} title="menu-{{this.label}}">
+                                <span class="{{#if highlight}}highlight{{/if}}">{{this.label}}</span>
+                            </a>
+                        {{/if}}
+                    </li>
+                {{/each}}
+                <li class="zion-desktop-visible" role="presentation">
+                    <a id="avatar" class="avatar" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false"
+                       title="{{user.displayName}}">
+                        {{#if user.avatar}}
+                            <img src="{{user.avatar}}" class="img-circle" alt="avatar"/>
+                        {{else}}
+                            <img src="https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/avatar.png"
+                                 class="img-circle" alt="avatar"/>
+                            <span>ME</span>
+                        {{/if}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    

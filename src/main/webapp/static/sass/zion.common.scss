@@ -1,0 +1,362 @@
+@import "zion.util";
+
+html, body {
+    font-family: $font-open-sans;
+    line-height: 1.4;
+    font-size: 14px;
+    margin: 0 auto;
+    color: $main-font-color;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    &:focus, &:hover {
+        text-decoration: none;
+    }
+}
+
+/* header */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: $font-mon;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+/* end header */
+
+/* text */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid #eee;
+    font-size: 16px;
+    small {
+        font-size: 14px;
+    }
+}
+
+/* end text */
+
+//.modal-open{
+//  overflow: hidden;
+//  position: fixed;
+//  width: 100%;
+//}
+
+.zion-link {
+    cursor: pointer;
+}
+
+.zion-indicator {
+    font-size: 12px;
+    color: $color-grey-light;
+}
+
+.zion-more-content-link {
+    .zion-more-link {
+        display: inline;
+    }
+    .zion-remain-content {
+        display: none;
+    }
+    &.zion-show-more-content {
+        .zion-more-link {
+            display: none;
+        }
+        .zion-remain-content {
+            display: inline;
+        }
+    }
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-border-radius {
+    border-radius: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
+}
+
+.underline {
+    border-bottom: 3px solid #656364;
+    border-radius: 0 !important;
+}
+
+.zion-wrapper {
+    min-height: 100%;
+    position: relative;
+    .admin-header-background {
+        margin-top: 35px;
+        background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/dashboard-header-bg.jpg") repeat-x;
+        height: 130px;
+        position: relative;
+        background-size: 200px;
+
+        @media (max-width: 767px) {
+            height: 45px;
+        }
+        .patch {
+            background-color: white;
+            height: 44px;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-top: 1px solid $color-grey-extra-light;
+            border-bottom: 1px solid $color-grey-extra-light;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+    .zion-content {
+        margin-top: 65px;
+        padding-bottom: 200px;
+    }
+    @media only screen and (max-width: 767px) {
+        .zion-content {
+            padding-bottom: 66px;
+        }
+    }
+}
+
+/* Deprecated */
+
+/*Start content section */
+
+.zion-circle-avatar {
+    max-width: 100%;
+    /* make it responsive */
+    width: $avatar-width;
+    display: block;
+
+    /* make it a circle */
+    border-radius: 50%;
+
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    /* it makes the clue thing, takes smaller dimension to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.zion-circle-avatar-lg {
+    /* make it responsive */
+    max-width: $avatar-width-lg;
+    width: $avatar-width-lg;
+    height: $avatar-width-lg;
+    /* make it a circle */
+    border-radius: 50%;
+
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    /* it makes the clue thing, takes smaller dimension to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white no-repeat;
+}
+
+.zion-username {
+}
+
+.zion-location {
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin-left: 2rem;
+}
+
+.zion-service {
+    font-size: 0.9em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: $third-font-color;
+}
+
+.zion-intro-summary {
+    font-size: 0.8em;
+    color: $third-font-color;
+}
+
+.zion-post-count {
+    font-size: 2em;
+    background-color: transparent;
+    color: $count-color;
+    font-weight: lighter;
+}
+
+.zion-count-container {
+    margin-top: 2rem;
+}
+
+.zion-post-count-text {
+    font-size: 0.8em;
+    color: $third-font-color;
+}
+
+.zion-like-feed {
+    &.fa-heart-o {
+        color: $color-grey-dark;
+    }
+    &.fa-heart {
+        color: $color-red;
+    }
+}
+
+.zion-facebook-link {
+    color: #3b5998;
+}
+
+.zion-instagram-link {
+    color: #8a3ab9;
+}
+
+.zion-youtube-link {
+    color: #cc181e;
+}
+
+.zion-looks-status-filter {
+    .right-content {
+        text-align: right;
+        .draft {
+            line-height: 24px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .published {
+            margin-left: 2rem;
+            line-height: 24px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+/*end content section */
+
+.zion-hide {
+    display: none !important;
+}
+
+.zion-input-warning {
+    border: 1px solid red;
+}
+
+#loginModal {
+    z-index: 99999;
+}
+
+.zion-grecaptcha {
+    display: none;
+}
+
+.zion-disabled {
+    opacity: 0.4 !important;
+}
+
+.zion-highlight {
+    font-weight: bold;
+}
+
+body {
+    .zion-wrapper {
+        .zion-desktop-visible {
+            display: block;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
+        .zion-mobile-visible {
+            display: none;
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+
+        .zion-desktop-visible.zion-mobile-visible {
+            display: block;
+        }
+    }
+}
+
+

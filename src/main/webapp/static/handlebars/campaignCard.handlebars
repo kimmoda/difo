@@ -1,0 +1,132 @@
+<div class="modal-dialog campaign-modal-container" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="top-bar clearfix">
+                <div class="modal-close">
+                    <i class="fa fa-lg fa-chevron-left" aria-hidden="true" data-dismiss="modal" aria-label="Close"></i>
+                </div>
+                <div class="mobile-top-bar-title">
+                    <h4 class="mobile-top-bar-title-content">Campaign</h4>
+                </div>
+            </div>
+            <button type="button" class="modal-close-btn close" data-dismiss="modal" aria-label="Close">
+                <span class="cancel-text" aria-hidden="true">&times;</span>
+            </button>
+            <div class="zion-campaign-card-container">
+                {{#if campaignStatus}}
+                    <div class="zion-campaign-status-container">
+                        <span class="label {{campaignStatus.cssClass}}">{{campaignStatus.value}}</span>
+                    </div>
+                {{/if}}
+                <h4 class="zion-campaign-title-content">
+                    {{title}}
+                </h4>
+                <p class="zion-campaign-create-date-time">
+                    {{dateTimeFormat creationDate}}
+                </p>
+                <div class="zion-campaign-author-info-container">
+                    <a href="{{creator.profileUrl}}" target="_blank"><img
+                            class="user-profile-link img-circle img-responsive zion-campaign-avatar"
+                            src="{{creator.avatar}}"
+                            alt="avatar"/></a>
+                    <span class="user-profile-link zion-campaign-author-name"
+                          title="{{creator.displayName}}">By {{creator.displayName}}</span>
+                </div>
+                <div class="campaign-image-container">
+                    {{#if postUrlPreview.image}}
+                        <img class="zion-campaign-image img-responsive center-block"
+                             src="{{postUrlPreview.image}}"
+                             alt="post preview image">
+                    {{/if}}
+                </div>
+                <blockquote class="zion-campaign-source-container">
+                    <div class="row">
+                        {{#if postUrlPreview.favicon}}
+                            <img class="zion-campaign-source-icon" src="{{postUrlPreview.favicon}}"
+                                 alt="social source icon">
+                        {{else}}
+                            <i class="fa fa-link zion-campaign-source-icon" aria-hidden="true"></i>
+                        {{/if}}
+                        {{#if postUrlPreview.title}}
+                            <p class="zion-campaign-source-title">
+                                {{postUrlPreview.title}}
+                            </p>
+                        {{/if}}
+                    </div>
+                    {{#if postUrlPreview.description}}
+                        <p class="zion-campaign-source-description">
+                            {{postUrlPreview.description}}
+                        </p>
+                    {{else}}
+                        <p class="zion-campaign-source-description">
+                            {{ postUrlPreview.url }}
+                        </p>
+                    {{/if}}
+                </blockquote>
+
+                {{#if description}}
+                    <p class="zion-campaign-description">
+                        {{description}}
+                    </p>
+                {{/if}}
+                <hr/>
+                {{#if showOriUrl}}
+                    <a href="{{postUrlPreview.url}}" class="zion-link-sm" target="_blank">View Original Post</a>
+                {{/if}}
+                <div class="promote-action-section">
+                    <div class="{{#if disabled}}zion-disabled {{/if}}">
+                        <h4 class="zion-campaign-subtitle">How to participate</h4>
+                        <p class="zion-campaign-rule">
+                            1. Click on the button below. A new window will open.
+                        </p>
+                        <p class="zion-campaign-rule">
+                            2. {{ taskType.description }}
+                        </p>
+                        <p class="zion-campaign-rule zion-highlight">
+                            3. Once you are done, come back to this page to claim your {{coinName}} coins reward.
+                        </p>
+                    </div>
+                    <div class="zion-campaign-promote-btn-container" id="zion-campaign-promote-btn-container">
+                        {{#if isMine}}
+                            <div class="btn btn-default zion-btn-white campaign-share-btn">
+                                Invite My Friends
+                            </div>
+                            <div class="user-share-container">
+                                <div id="zion-campaign-social-share-container"
+                                     class="zion-campaign-social-share-container zion-social-share-plugin-container" data-share-url="{{shortUrl}}"
+                                     data-share-title="{{title}}" data-share-description="{{content}}"
+                                     data-share-image="{{photo.url}}"></div>
+                            </div>
+                        {{else}}
+                            {{#if taskType.isShare}}
+                                <button class="zion-campaign-promote-btn btn zion-btn-black {{#if
+                                        disabled}}zion-disabled {{/if}}"
+                                        id="zion-campaign-promote-btn" {{#if disabled}} disabled{{/if}}>
+                                    {{ taskType.description }}
+                                </button>
+                            {{else}}
+                                <a class="zion-campaign-promote-btn btn zion-btn-black {{#if
+                                        disabled}}zion-disabled {{/if}}" id="zion-campaign-promote-btn"
+                                   href="{{#if disabled}}javascript:void(0);{{else}}{{postUrlPreview.url}}{{/if}}"
+                                   target="_blank">
+                                    {{ taskType.description }}
+                                </a>
+                            {{/if}}
+                        {{/if}}
+                    </div>
+                </div>
+                <hr/>
+                <div class="campaign-history-container">
+                    <h4 class="zion-campaign-subtitle">Campaign participants</h4>
+                    <div id="campaign-participants" class="campaign-participants"></div>
+                    <div class="zion-loading"></div>
+                    <div class="participants-load-more-button-container load-more-button-container zion-hide" id="participants-load-more-button-container">
+                        <span class="participants-load-more-button load-more-button" id="participants-load-more-button">View all participants</span>
+                    </div>
+                    <div id="loading-participants-error" class="loading-participants-error alert alert-danger zion-hide" role="alert">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

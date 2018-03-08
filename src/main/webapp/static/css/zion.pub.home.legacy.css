@@ -1,0 +1,414 @@
+.zion-wrapper .zion-content {
+  width: 100%;
+  padding-bottom: 150px; }
+  @media (max-width: 767px) {
+    .zion-wrapper .zion-content {
+      margin-top: 35px; } }
+
+.zion-home-container {
+  background-color: #FFFFFF; }
+  @media (min-width: 1200px) {
+    .zion-home-container .col-lg-3:nth-child(4n+5) {
+      clear: left; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .zion-home-container .col-md-4:nth-child(3n+1) {
+      clear: left; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .zion-home-container .col-md-4:nth-child(2n+1) {
+      clear: left; } }
+  .zion-home-container .header {
+    margin-bottom: 50px; }
+    .zion-home-container .header .header-container .carousel-inner {
+      max-height: 400px; }
+      @media (max-width: 767px) {
+        .zion-home-container .header .header-container .carousel-inner {
+          max-height: 700px; } }
+      .zion-home-container .header .header-container .carousel-inner .img-lg {
+        display: inline-block; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-inner .img-lg {
+            display: none; } }
+      .zion-home-container .header .header-container .carousel-inner .img-sm {
+        display: none; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-inner .img-sm {
+            display: inline-block; } }
+    .zion-home-container .header .header-container .carousel-indicators {
+      bottom: -60px; }
+      .zion-home-container .header .header-container .carousel-indicators li {
+        width: 5px;
+        height: 5px;
+        background-color: #e5e5e5;
+        border: none; }
+      .zion-home-container .header .header-container .carousel-indicators .active {
+        width: 5px;
+        height: 5px;
+        margin: 1px;
+        background-color: #a5a5a5; }
+    .zion-home-container .header .header-container .carousel-control {
+      width: 5%;
+      background-image: none;
+      opacity: 1; }
+      .zion-home-container .header .header-container .carousel-control i {
+        position: absolute;
+        top: 45%; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .zion-home-container .header .header-container .carousel-control i {
+            top: 37%; } }
+    .zion-home-container .header .header-container .left i {
+      left: 40%; }
+    .zion-home-container .header .header-container .right i {
+      right: 50%; }
+    .zion-home-container .header .header-container .carousel-caption {
+      top: 20%;
+      bottom: 9%;
+      left: 50%;
+      width: 32%;
+      text-align: center;
+      text-shadow: none;
+      color: #1f1e1f; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .zion-home-container .header .header-container .carousel-caption {
+          top: 15%; } }
+      @media (max-width: 767px) {
+        .zion-home-container .header .header-container .carousel-caption {
+          top: 55%;
+          bottom: 13%;
+          left: 13%;
+          width: 75%;
+          padding-top: 15px;
+          background-color: #FFFFFF; } }
+      .zion-home-container .header .header-container .carousel-caption .sub-title-header {
+        margin: 0;
+        font-size: 1.3vw; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-caption .sub-title-header {
+            font-size: 4vw; } }
+      .zion-home-container .header .header-container .carousel-caption .sub-title-footer {
+        margin: 0 auto 2%;
+        font-size: 1vw; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-caption .sub-title-footer {
+            margin: 0 auto 2%;
+            font-size: 2.7vw;
+            line-height: 1.5; } }
+      .zion-home-container .header .header-container .carousel-caption .title-short {
+        width: 55%; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-caption .title-short {
+            margin: 0 auto 1%; } }
+      .zion-home-container .header .header-container .carousel-caption .title {
+        margin: 0;
+        font-size: 2.5vw; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-caption .title {
+            margin: 0 auto;
+            font-size: 6vw;
+            width: 70%; } }
+      .zion-home-container .header .header-container .carousel-caption .btn {
+        font-size: 1vw;
+        font-weight: 100;
+        border-radius: 4px; }
+        @media (max-width: 767px) {
+          .zion-home-container .header .header-container .carousel-caption .btn {
+            font-size: 2vw;
+            padding: 6px 12px; } }
+      .zion-home-container .header .header-container .carousel-caption .btn-get-inspired {
+        margin-right: 10px;
+        background-color: transparent; }
+    @media (max-width: 767px) {
+      .zion-home-container .header .header-container .content-lg {
+        padding-top: 10px; } }
+  @media (max-width: 767px) {
+    .zion-home-container .trendsetter {
+      margin-bottom: 40px; } }
+  .zion-home-container .trendsetter .header-title {
+    font-size: 20px; }
+  .zion-home-container .trendsetter .trendsetter-body .carousel-inner {
+    height: 230px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner {
+        height: 230px; } }
+    @media (max-width: 767px) {
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .trendsetter-container:not(:first-child) {
+        display: none; } }
+    .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image {
+      position: relative;
+      height: 110px;
+      text-align: center; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image {
+          height: 135px; } }
+      @media (max-width: 767px) {
+        .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image {
+          height: auto; } }
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image .style-pick {
+        position: absolute;
+        top: 40px;
+        left: 35px;
+        width: 25%;
+        opacity: 0.8; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image .style-pick {
+            top: -10px;
+            left: 15px;
+            width: 30%; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image .style-pick {
+            left: 15px;
+            width: 30%; } }
+        @media (max-width: 767px) {
+          .zion-home-container .trendsetter .trendsetter-body .carousel-inner .image .style-pick {
+            top: -5px;
+            left: 55px;
+            width: 20%; } }
+    .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content {
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center; }
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .info {
+        margin-top: 10px;
+        width: 100%; }
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .title {
+        display: inline-block;
+        margin-bottom: -5px;
+        height: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: #1f1e1f; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .title {
+            margin: 0; } }
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .role {
+        margin-bottom: 0; }
+        .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .role span {
+          font-size: 9px; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .role span {
+              font-size: 8px; } }
+        .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .role .role-symbol {
+          color: #a5a5a5; }
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .dot {
+        margin-left: 2px;
+        margin-right: 5px; }
+      .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .follow {
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: flex;
+        display: -webkit-flex;
+        -ms-flex-direction: column;
+        /* TWEENER - IE 10 */
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        margin-top: 20px; }
+        .zion-home-container .trendsetter .trendsetter-body .carousel-inner .content .follow .btn {
+          font-size: 8px;
+          border-radius: 4px; }
+    .zion-home-container .trendsetter .trendsetter-body .carousel-inner .trendsetter-bottom {
+      display: inline-block;
+      margin-top: 0px;
+      min-height: 0;
+      width: 40%;
+      border-top: 1px solid #e5e5e5; }
+  .zion-home-container .trendsetter .trendsetter-body .trendsetter-container {
+    text-align: center; }
+  .zion-home-container .trendsetter .trendsetter-body .carousel-control {
+    width: 2%;
+    background-image: none; }
+    .zion-home-container .trendsetter .trendsetter-body .carousel-control i {
+      position: absolute;
+      top: 30%;
+      color: black;
+      font-size: 25px;
+      text-shadow: none; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .zion-home-container .trendsetter .trendsetter-body .carousel-control i {
+          top: 35%; } }
+      @media (max-width: 767px) {
+        .zion-home-container .trendsetter .trendsetter-body .carousel-control i {
+          top: 38%; } }
+  .zion-home-container .trendsetter .trendsetter-body .carousel-indicators {
+    bottom: 0; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .zion-home-container .trendsetter .trendsetter-body .carousel-indicators {
+        bottom: -20px; } }
+    @media (max-width: 767px) {
+      .zion-home-container .trendsetter .trendsetter-body .carousel-indicators {
+        bottom: -50px; } }
+    .zion-home-container .trendsetter .trendsetter-body .carousel-indicators li {
+      width: 5px;
+      height: 5px;
+      background-color: #e5e5e5;
+      border: none; }
+    .zion-home-container .trendsetter .trendsetter-body .carousel-indicators .active {
+      width: 5px;
+      height: 5px;
+      margin: 1px;
+      background-color: #a5a5a5; }
+  .zion-home-container .title {
+    float: none; }
+  .zion-home-container #latestLooks {
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px; }
+  .zion-home-container .see-more-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; }
+    .zion-home-container .see-more-btn .btn {
+      padding: 5px 50px;
+      font-size: 14px; }
+  .zion-home-container .looks .title {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .zion-home-container .looks .item {
+    padding-bottom: 30px; }
+    @media (max-width: 767px) {
+      .zion-home-container .looks .item {
+        padding-left: 0;
+        padding-right: 0; } }
+    .zion-home-container .looks .item .author-link:hover {
+      cursor: pointer; }
+    .zion-home-container .looks .item .author-container {
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: flex;
+      display: -webkit-flex; }
+    .zion-home-container .looks .item .author-info-container {
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: flex;
+      display: -webkit-flex;
+      -ms-flex-item-align: center;
+      /* TWEENER - IE 10 */
+      align-items: center;
+      -webkit-align-items: center; }
+    .zion-home-container .looks .item .author-name {
+      font-size: 0.7vw;
+      overflow-wrap: break-word; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .zion-home-container .looks .item .author-name {
+          font-size: 1.5vw; } }
+      @media (max-width: 767px) {
+        .zion-home-container .looks .item .author-name {
+          font-size: 2vw; } }
+    .zion-home-container .looks .item .ie {
+      width: 100%; }
+    .zion-home-container .looks .item .look-image {
+      margin-bottom: 3%;
+      width: 100%;
+      height: 320px;
+      background-position: top;
+      background-size: cover; }
+      .zion-home-container .looks .item .look-image:hover {
+        cursor: pointer; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .zion-home-container .looks .item .look-image {
+          height: 340px; } }
+      @media (max-width: 991px) {
+        .zion-home-container .looks .item .look-image {
+          height: 400px; } }
+    .zion-home-container .looks .item .image-avatar {
+      height: 30px;
+      width: 30px;
+      min-width: 30px;
+      margin-right: 1rem; }
+    .zion-home-container .looks .item .interact {
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: flex;
+      display: -webkit-flex;
+      -ms-flex-pack: end;
+      /* TWEENER - IE 10 */
+      justify-content: flex-end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-item-align: center;
+      /* TWEENER - IE 10 */
+      align-items: center;
+      -webkit-align-items: center; }
+      .zion-home-container .looks .item .interact .interact-container {
+        font-size: 10px; }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .zion-home-container .looks .item .interact .interact-container {
+            font-size: 12px; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .zion-home-container .looks .item .interact .interact-container {
+            font-size: 14px; } }
+        @media (max-width: 767px) {
+          .zion-home-container .looks .item .interact .interact-container {
+            font-size: 16px; } }
+        @media (max-width: 424px) {
+          .zion-home-container .looks .item .interact .interact-container {
+            font-size: 10px; } }
+      .zion-home-container .looks .item .interact .like {
+        color: #FF3141; }
+      .zion-home-container .looks .item .interact .zion-feed-like-count {
+        padding-left: 5px; }
+  .zion-home-container .looks .see-more-btn {
+    margin-bottom: 30px; }
+  .zion-home-container .stylists {
+    padding-bottom: 15px;
+    background-color: #FFFFFF;
+    text-align: center; }
+    .zion-home-container .stylists .figure-list {
+      margin: 0;
+      padding: 0; }
+    .zion-home-container .stylists .figure-list:after {
+      content: "";
+      display: block;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden; }
+    .zion-home-container .stylists .figure-list li {
+      list-style: none;
+      float: left;
+      width: 19%;
+      margin: 0 3% 2% 3%; }
+    .zion-home-container .stylists .figure-list figure {
+      position: relative;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding-bottom: 100%;
+      background: no-repeat center;
+      background-size: cover; }
+    .zion-home-container .stylists .figure-list figure a {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0; }
+    .zion-home-container .stylists .title {
+      margin-top: 40px;
+      margin-bottom: 50px; }
+      @media (max-width: 767px) {
+        .zion-home-container .stylists .title {
+          padding-top: 50px; } }
+    .zion-home-container .stylists .content {
+      width: 80%;
+      margin: 0 auto 20px; }
+      @media (max-width: 767px) {
+        .zion-home-container .stylists .content .avatar {
+          margin-bottom: 50px; } }
+      .zion-home-container .stylists .content .info {
+        padding: 10px;
+        box-shadow: 0px 3px 8px rgba(100, 100, 100, 0.1); }
+        .zion-home-container .stylists .content .info .name {
+          margin-bottom: 0;
+          color: #656364; }
+        .zion-home-container .stylists .content .info .like {
+          color: #a5a5a5; }
+    .zion-home-container .stylists .stylist-total {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #a5a5a5; }
+    .zion-home-container .stylists .book-btn {
+      margin-bottom: 50px;
+      font-size: 20px;
+      border-color: #a5a5a5;
+      color: #656364; }

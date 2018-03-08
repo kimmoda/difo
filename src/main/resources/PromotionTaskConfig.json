@@ -1,0 +1,32 @@
+[
+    {   
+        "name": "COMMENT_LIKE",
+        "description": "Like and comment my post",
+        "reward": 20,
+        "cost": 0
+    },
+    {   
+        "name": "SHARE",
+        "description": "Share my post on Facebook",
+        "reward": 60,
+        "cost": 0
+    },
+    {   
+        "name": "FOLLOW",
+        "description": "Follow me",
+        "reward": 80,
+        "cost": 0
+    },
+    {   
+        "name": "SUBSCRIBE",
+        "description": "Subscribe",
+        "reward": 80,
+        "cost": 0
+    },
+    {   
+        "name": "CREATE_CAMPAIGN",
+        "description": "Create Campaign",
+        "reward": 0,
+        "cost": 200
+    }
+]

@@ -1,0 +1,1 @@
+We're reviewing your application to ${data.brandName} [no-reply]

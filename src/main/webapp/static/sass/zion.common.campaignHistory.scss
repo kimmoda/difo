@@ -1,0 +1,37 @@
+@import "zion.util";
+
+.row-container {
+    margin-top: 20px;
+    border-bottom: 1px solid $color-grey-lighter;
+    cursor: pointer;
+    .preview-image {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    .history-title {
+        padding-right: 0;
+        padding-left: 0;
+        overflow: hidden;
+        height: 40px;
+    }
+    .zion-campaign-reword {
+        padding-right: 0;
+        padding-left: 15px;
+        .zion-campaign-reword-icon {
+            vertical-align: middle;
+            margin-right: 5px;
+            font-size: 20px;
+            color: orange;
+        }
+    }
+}
+
+.history-load-more-container {
+    margin-top: 15px;
+    text-align: right;
+    .btn {
+        width: 200px;
+    }
+}

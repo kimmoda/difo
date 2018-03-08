@@ -1,0 +1,204 @@
+.zion-wrapper {
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: flex;
+  -ms-flex-direction: column;
+  /* TWEENER - IE 10 */
+  flex-direction: column; }
+  .zion-wrapper .zion-content {
+    width: 100%;
+    padding: 0; }
+    @media (max-width: 767px) {
+      .zion-wrapper .zion-content {
+        margin-top: 35px; } }
+
+.zion-pub-footer {
+  position: inherit; }
+
+.zion-about-us-container .header {
+  position: relative;
+  height: 520px;
+  background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/aboutus/top-banner.jpg") center/cover; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .zion-about-us-container .header {
+      height: 460px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .zion-about-us-container .header {
+      height: 420px; } }
+  @media (max-width: 767px) {
+    .zion-about-us-container .header {
+      height: 500px;
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: flex;
+      -ms-flex-direction: column-reverse;
+      /* TWEENER - IE 10 */
+      flex-direction: column-reverse; } }
+  @media (max-width: 419px) {
+    .zion-about-us-container .header {
+      height: 300px; } }
+.zion-about-us-container .main-content {
+  position: relative;
+  padding-top: 5%; }
+.zion-about-us-container .title {
+  font-weight: bold;
+  font-size: 1.2vw;
+  margin-bottom: 4%; }
+  @media (max-width: 991px) {
+    .zion-about-us-container .title {
+      font-size: 2.2vw; } }
+.zion-about-us-container .sub-title {
+  font-weight: bold;
+  color: #656364; }
+.zion-about-us-container .text {
+  font-size: 1vw; }
+  @media (max-width: 991px) {
+    .zion-about-us-container .text {
+      font-size: 2vw; } }
+  .zion-about-us-container .text .text-mark {
+    font-weight: bold; }
+.zion-about-us-container .quote {
+  margin: 0 10px;
+  color: #e5e5e5; }
+.zion-about-us-container .quote-right {
+  vertical-align: text-top; }
+.zion-about-us-container .header-content {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  width: 34%;
+  padding: 20px 0;
+  background-color: white;
+  font-size: 14px;
+  text-align: center; }
+  @media (min-width: 1440px) {
+    .zion-about-us-container .header-content {
+      width: 30%;
+      padding: 20px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .zion-about-us-container .header-content {
+      width: 40%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .zion-about-us-container .header-content {
+      width: 35%; } }
+  @media (max-width: 767px) {
+    .zion-about-us-container .header-content {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 65%;
+      padding: 20px 0;
+      margin: 0 auto 40px; } }
+  @media (max-width: 767px) {
+    .zion-about-us-container .header-content {
+      font-size: 12px; } }
+  .zion-about-us-container .header-content .top-banner-content {
+    margin-bottom: 10px; }
+  .zion-about-us-container .header-content .title {
+    margin-bottom: 0; }
+  .zion-about-us-container .header-content .zion-btn-black {
+    font-size: 1vw; }
+    @media (max-width: 767px) {
+      .zion-about-us-container .header-content .zion-btn-black {
+        font-size: 2vw; } }
+.zion-about-us-container .background-pattern {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/aboutus/bg-pattern.png"); }
+.zion-about-us-container .body {
+  position: relative;
+  z-index: 2;
+  padding: 4%;
+  margin-bottom: 4%;
+  width: 75%;
+  background-color: #FFFFFF; }
+  .zion-about-us-container .body .section-break {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-top: 1px dashed #e5e5e5; }
+  .zion-about-us-container .body .introduce .content {
+    margin-top: 5%; }
+  .zion-about-us-container .body .introduce .banner-image {
+    width: 100%; }
+  .zion-about-us-container .body .become-trendsetter {
+    margin-bottom: 20px; }
+    .zion-about-us-container .body .become-trendsetter .btn {
+      font-size: 1vw; }
+      @media (max-width: 767px) {
+        .zion-about-us-container .body .become-trendsetter .btn {
+          font-size: 2vw; } }
+  .zion-about-us-container .body .video-container {
+    height: 37vw;
+    margin-bottom: 2%; }
+    .zion-about-us-container .body .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .zion-about-us-container .body .story .image {
+    margin-bottom: 2%; }
+  .zion-about-us-container .body .story .story-content {
+    margin-bottom: 2%; }
+  .zion-about-us-container .body .story .hr-content {
+    margin-top: 5%; }
+    .zion-about-us-container .body .story .hr-content .text {
+      margin-bottom: 5%; }
+  .zion-about-us-container .body .story .hr-idea {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 2vw;
+    text-align: center; }
+    .zion-about-us-container .body .story .hr-idea .idea-container {
+      width: 80%;
+      margin: 0 auto; }
+    .zion-about-us-container .body .story .hr-idea .text {
+      font-size: 1.5vw; }
+      @media (max-width: 991px) {
+        .zion-about-us-container .body .story .hr-idea .text {
+          font-size: 2.4vw; } }
+.zion-about-us-container .footer {
+  background-color: #FFFFFF; }
+  @media (max-width: 991px) {
+    .zion-about-us-container .footer .btn {
+      font-size: 2vw; } }
+  .zion-about-us-container .footer .footer-container {
+    width: 76.5%;
+    margin: 0 auto;
+    padding: 20px 0; }
+    @media (min-width: 992px) {
+      .zion-about-us-container .footer .footer-container {
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: flex; } }
+    @media (min-width: 991px) {
+      .zion-about-us-container .footer .footer-container .zion-form {
+        margin-top: 8%; } }
+  .zion-about-us-container .footer .break {
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: flex; }
+    @media (max-width: 991px) {
+      .zion-about-us-container .footer .break {
+        margin: 5% 0;
+        border: 1px dashed #e5e5e5; } }
+  .zion-about-us-container .footer .line-break {
+    height: 90%;
+    margin: auto;
+    border-left: 2px solid #e5e5e5; }
+  .zion-about-us-container .footer .contact-message {
+    resize: none; }
+    @media (max-width: 419px) {
+      .zion-about-us-container .footer .contact-message {
+        height: 83px; } }
+  .zion-about-us-container .footer .sub-title {
+    margin-bottom: 2%; }
+  .zion-about-us-container .footer .social-media-header {
+    margin-bottom: 3%; }
+    .zion-about-us-container .footer .social-media-header .title {
+      display: inline-block; }
+  .zion-about-us-container .footer .follow-instagram-btn {
+    border: none;
+    background-color: #e5e5e5;
+    font-weight: bold; }

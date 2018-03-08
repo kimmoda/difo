@@ -1,0 +1,85 @@
+@import 'zion.util';
+.zion-campaign-modal {
+    .modal-content {
+        border-radius: 0;
+        background-color: $color-white;
+        border: none;
+        .modal-body {
+            padding: 0;
+        }
+    }
+    .modal-header {
+        border: none;
+    }
+    .close {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+        border-radius: 50%;
+        border: 2px solid $color-white;
+        color: $color-white;
+        background-color: $color-black;
+        opacity: 1;
+        .cancel-text {
+            font-weight: normal;
+        }
+    }
+    .zion-campaign-card-container {
+        padding: 8% 8% 5% 8%;
+    }
+    .top-bar {
+        z-index: 15;
+        display: none;
+        width: 100%;
+        padding: 2% 5%;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        margin: 0;
+        background-color: $color-grey-extra-lightest;
+    }
+    .mobile-top-bar-title {
+        text-align: center;
+    }
+    .mobile-top-bar-title-content {
+        font-weight: bold;
+    }
+    .modal-close {
+        float: left;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .zion-campaign-modal {
+        .campaign-modal-container {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            .modal-content {
+                height: auto;
+                min-height: 100%;
+                border-radius: 0;
+            }
+        }
+        .close {
+            display: none;
+        }
+        .zion-campaign-card-container {
+            padding: 5% 5% 2% 5%;
+        }
+        .top-bar {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .signin-container {
+        width: 500px;
+    }
+}

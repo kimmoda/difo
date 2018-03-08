@@ -1,0 +1,19 @@
+{{#each looks}}
+    <section class="item col-lg-3 col-md-4 col-sm-6">
+        <div class="look-image" style="background-image: url({{this.coverImage.url}})" data-id="{{this.id}}"></div>
+        <div class="author-container row">
+            <div class="col-xs-9 author-info-container">
+                <img class="img-circle image-avatar img-responsive author-link" data-user-id="{{this.author.userId}}" src="{{this.author.avatar}}" alt="avatar"/>
+                <div class="author-name author-link" data-user-id="{{this.author.userId}}" title="{{this.author.displayName}}">
+                    {{this.author.displayName}}
+                </div>
+            </div>
+            <div class="col-xs-3 interact">
+                <div class="interact-container">
+                    <div class="zion-feed-like-plugin-container" data-feed-like-id="{{this.id}}" data-feed-like="{{this.like}}" data-feed-like-count="{{likeCount}}"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{/each}}
+<section class="item col-lg-3 col-md-4 col-sm-6"></section>

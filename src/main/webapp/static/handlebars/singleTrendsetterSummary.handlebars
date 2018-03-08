@@ -1,0 +1,86 @@
+<div class="zion-trendsetter-container row">
+    <section class="col-xs-12 row">
+        <section class="col-sm-3">
+            <img class="img-circle image-avatar img-responsive" src="{{avatar}}" alt="avatar"/>
+        </section>
+        <section class="col-sm-9 user-summary-container">
+            <h3 class="name" title="{{displayName}}">
+                {{displayName}}
+            </h3>
+            <div class="role">
+                {{#each userRoles}}
+                    {{{listUserRoles this}}}
+                {{/each}}
+            </div>
+            <div class="status hidden-xs">
+                <div class="feed">
+                    <span id="feed-count" class="number">{{feedCount}}</span>
+                    <span class="content">Looks</span>
+                </div>
+                <div class="like">
+                    <span id="fans-count" class="number">{{fansCount}}</span>
+                    <span class="content like-content"></span>
+                </div>
+                <div class="location">
+                    {{#if location}}
+                        <i class="fa fa-lg fa-map-marker" aria-hidden="true"></i>
+                        <span>{{location}}</span>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="email">
+                {{#if email}}
+                    <a href="mailto:{{email}}">{{email}}</a>
+                {{/if}}
+            </div>
+            <div class="social-link">
+                {{#if facebook}}
+                    <a class="link" href="{{facebook}}" target="_blank">
+                        <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                {{/if}}
+                {{#if youtube}}
+                    <a class="link" href="{{youtube}}" target="_blank">
+                        <i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                {{/if}}
+                {{#if instagram}}
+                    <a class="link" href="{{instagram}}" target="_blank">
+                        <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                    </a>
+                {{/if}}
+                {{#if website}}
+                    <a class="link" href="{{website}}" target="_blank">
+                        <i class="fa fa-2x fa-globe" aria-hidden="true"></i>
+                    </a>
+                {{/if}}
+            </div>
+        </section>
+    </section>
+    <section class="col-xs-12 mobile-introduce-container">
+        <div class="introduce">
+            {{#if introduce}}
+                {{introduce}}
+            {{/if}}
+        </div>
+    </section>
+
+    <section class="col-xs-12 visible-xs mobile-status-container">
+        <div class="mobile-status">
+            <div class="feed">
+                <span id="feed-count" class="number">{{feedCount}}</span>
+                <span class="content">Looks</span>
+            </div>
+            <div class="like">
+                <span id="fans-count" class="number">{{fansCount}}</span>
+                <span class="content like-content"></span>
+            </div>
+            <div class="location">
+                {{#if location}}
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span class="content">{{location}}</span>
+                {{/if}}
+            </div>
+        </div>
+    </section>
+</div>

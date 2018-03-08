@@ -1,0 +1,118 @@
+.zion-stylist-apply-container {
+  margin-bottom: 100px; }
+  .zion-stylist-apply-container .top-image {
+    width: 100%; }
+    @media (min-width: 992px) {
+      .zion-stylist-apply-container .top-image {
+        padding: 0 160px; } }
+  @media (max-width: 767px) {
+    .zion-stylist-apply-container {
+      margin-top: -30px; } }
+  .zion-stylist-apply-container .video-container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: 460px;
+    overflow: hidden; }
+    .zion-stylist-apply-container .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    @media (max-width: 419px) {
+      .zion-stylist-apply-container .video-container {
+        width: 90%;
+        height: 190px; } }
+    @media (min-width: 420px) and (max-width: 767px) {
+      .zion-stylist-apply-container .video-container {
+        width: 95%;
+        height: 330px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .zion-stylist-apply-container .video-container {
+        width: 95%;
+        height: 420px; } }
+  @media (max-width: 767px) {
+    .zion-stylist-apply-container .facebook-login-container, .zion-stylist-apply-container .google-login-container {
+      display: block; } }
+  .zion-stylist-apply-container .title {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #1f1e1f; }
+    @media (max-width: 992px) {
+      .zion-stylist-apply-container .title {
+        font-size: 28px; } }
+  .zion-stylist-apply-container .content {
+    color: #656364; }
+    .zion-stylist-apply-container .content .apply-button {
+      text-align: center; }
+    @media (min-width: 992px) {
+      .zion-stylist-apply-container .content {
+        padding: 0 100px; } }
+    .zion-stylist-apply-container .content p {
+      font-size: 14px; }
+      @media (max-width: 767px) {
+        .zion-stylist-apply-container .content p {
+          font-size: 22px; } }
+    .zion-stylist-apply-container .content .login-button {
+      padding-left: 0;
+      padding-right: 0; }
+    .zion-stylist-apply-container .content .notice {
+      font-size: 15px;
+      text-align: left;
+      margin-bottom: 30px; }
+  .zion-stylist-apply-container .apply-button .btn {
+    padding: 15px 16px;
+    border: none;
+    color: white;
+    line-height: 0.3px;
+    /* i {
+        padding-right: 5px;
+        font-size: 14px;
+    }
+    span {
+        font-size: 12px;
+    } */ }
+  .zion-stylist-apply-container .apply-button .button-content {
+    padding: 10px;
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      .zion-stylist-apply-container .apply-button .button-content {
+        display: block; } }
+  .zion-stylist-apply-container .zion-form {
+    width: 100%; }
+    @media (min-width: 992px) {
+      .zion-stylist-apply-container .zion-form {
+        padding-left: 100px; } }
+    @media (min-width: 768px) {
+      .zion-stylist-apply-container .zion-form {
+        width: 50%; } }
+    .zion-stylist-apply-container .zion-form label {
+      color: #656364; }
+    .zion-stylist-apply-container .zion-form .btn {
+      padding: 6px 10px;
+      font-size: 14px;
+      color: #1f1e1f;
+      border-color: #656364; }
+
+.zion-stylist-complete-container {
+  margin-top: 50px; }
+  .zion-stylist-complete-container .title {
+    padding: 30px;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .zion-stylist-complete-container .title {
+        font-size: 22px; } }
+  .zion-stylist-complete-container .content {
+    font-size: 20px; }
+    @media (min-width: 1200px) {
+      .zion-stylist-complete-container .content {
+        padding: 0 260px; } }
+    @media (max-width: 767px) {
+      .zion-stylist-complete-container .content {
+        font-size: 12px; } }

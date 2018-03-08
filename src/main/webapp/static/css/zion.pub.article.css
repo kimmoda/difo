@@ -1,0 +1,88 @@
+.zion-wrapper > .container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px; }
+  .zion-wrapper > .container .header {
+    background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/press/press-bg-pattern.png") repeat;
+    height: 300px;
+    width: 100%;
+    margin-top: -20px; }
+    .zion-wrapper > .container .header .header-title {
+      text-align: center;
+      padding-top: 3rem; }
+      @media only screen and (max-width: 767px) {
+        .zion-wrapper > .container .header .header-title {
+          padding-top: 1rem; } }
+      .zion-wrapper > .container .header .header-title h1 {
+        font-weight: bold; }
+    .zion-wrapper > .container .header .header-subtitle {
+      text-align: center; }
+  .zion-wrapper > .container .content-container {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10rem; }
+    .zion-wrapper > .container .content-container .article-area {
+      background-color: white; }
+      .zion-wrapper > .container .content-container .article-area .cover {
+        padding-top: 15px;
+        width: auto;
+        max-height: 300px;
+        overflow: hidden; }
+        .zion-wrapper > .container .content-container .article-area .cover .cover-image {
+          max-width: 100%;
+          max-height: 100%;
+          width: 100%; }
+      .zion-wrapper > .container .content-container .article-area .title {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: bold; }
+      .zion-wrapper > .container .content-container .article-area .author-container {
+        color: #656364;
+        margin-bottom: 20px; }
+      .zion-wrapper > .container .content-container .article-area .article-content {
+        color: #656364; }
+        .zion-wrapper > .container .content-container .article-area .article-content figure {
+          max-width: 100% !important; }
+        .zion-wrapper > .container .content-container .article-area .article-content img {
+          max-width: 100% !important;
+          height: 100%; }
+        .zion-wrapper > .container .content-container .article-area .article-content iframe {
+          max-width: 100%; }
+    .zion-wrapper > .container .content-container .recommend-area {
+      background-color: #404040;
+      color: white; }
+      .zion-wrapper > .container .content-container .recommend-area .headline {
+        height: 50px;
+        line-height: 50px;
+        padding-left: 15px;
+        font-size: 15px;
+        background-color: #1f1e1f;
+        margin-left: -15px;
+        margin-right: -15px; }
+      .zion-wrapper > .container .content-container .recommend-area .recommend-item {
+        cursor: pointer; }
+        .zion-wrapper > .container .content-container .recommend-area .recommend-item .media-left .icon-container {
+          height: 80px;
+          width: 80px;
+          overflow: hidden; }
+          .zion-wrapper > .container .content-container .recommend-area .recommend-item .media-left .icon-container .media-object {
+            height: 100%; }
+        .zion-wrapper > .container .content-container .recommend-area .recommend-item .media-body .media-heading {
+          font-size: 12px; }
+        .zion-wrapper > .container .content-container .recommend-area .recommend-item .media-body .author .date {
+          font-size: 5px; }
+      .zion-wrapper > .container .content-container .recommend-area .line {
+        margin-top: 15px;
+        height: 1px;
+        background-color: #656364; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+@media only screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    display: -ms-flexbox; } }

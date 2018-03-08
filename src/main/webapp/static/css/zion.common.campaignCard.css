@@ -1,0 +1,61 @@
+.zion-campaign-modal .modal-content {
+  border-radius: 0;
+  background-color: #FFFFFF;
+  border: none; }
+  .zion-campaign-modal .modal-content .modal-body {
+    padding: 0; }
+.zion-campaign-modal .modal-header {
+  border: none; }
+.zion-campaign-modal .close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: #1f1e1f;
+  opacity: 1; }
+  .zion-campaign-modal .close .cancel-text {
+    font-weight: normal; }
+.zion-campaign-modal .zion-campaign-card-container {
+  padding: 8% 8% 5% 8%; }
+.zion-campaign-modal .top-bar {
+  z-index: 15;
+  display: none;
+  width: 100%;
+  padding: 2% 5%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  margin: 0;
+  background-color: #f8f8f8; }
+.zion-campaign-modal .mobile-top-bar-title {
+  text-align: center; }
+.zion-campaign-modal .mobile-top-bar-title-content {
+  font-weight: bold; }
+.zion-campaign-modal .modal-close {
+  float: left;
+  line-height: 35px; }
+
+@media (max-width: 767px) {
+  .zion-campaign-modal .campaign-modal-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; }
+    .zion-campaign-modal .campaign-modal-container .modal-content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0; }
+  .zion-campaign-modal .close {
+    display: none; }
+  .zion-campaign-modal .zion-campaign-card-container {
+    padding: 5% 5% 2% 5%; }
+  .zion-campaign-modal .top-bar {
+    display: block; } }
+@media (min-width: 768px) {
+  .signin-container {
+    width: 500px; } }

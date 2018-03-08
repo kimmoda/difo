@@ -1,0 +1,217 @@
+@import "zion.util";
+
+.zion-wrapper {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    .zion-content {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+}
+
+.zion-tab-bar-container {
+    display: none;
+}
+
+.single-trendsetter-body {
+    width: 600px;
+    margin: 0 auto;
+    @media (max-width: 560px) {
+        width: 100%;
+    }
+
+}
+
+.single-trendsetter-look {
+    .tag, .comment-container, .zion-modal-feed-like-container, .comment-send-container {
+        display: none;
+    }
+}
+
+.grid {
+    max-width: 600px;
+}
+
+/* reveal grid after images loaded */
+.grid.are-images-unloaded {
+    opacity: 0;
+}
+
+.grid-item,
+.grid-col-sizer {
+    width: 32%;
+}
+
+.grid-gutter-sizer {
+    width: 2%;
+}
+
+/* hide by default */
+.grid.are-images-unloaded .image-grid-item {
+    opacity: 0;
+}
+
+.grid-item {
+    margin-bottom: 2%;
+    float: left;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.page-load-status {
+    padding-top: 20px;
+    text-align: center;
+    color: #777;
+}
+
+.single-trendsetter-container {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    .share-user-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px 7px;
+        z-index: 1;
+        font-size: 10px;
+        @media (max-width: 767px) {
+            top: 8px;
+            right: 10px;
+        }
+    }
+    .user-share-container {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        display: none;
+        width: 230px;
+        height: 90px;
+        padding: 10px;
+        z-index: 1;
+        background-color: #FFFFFF;
+        border: 1px solid #a5a5a5;
+        border-radius: 4px;
+        @media (max-width: 767px) {
+            top: 40px;
+            right: 10px;
+        }
+    }
+    .show-share-container {
+        display: inline-block;
+    }
+    .zion-trendsetter-container{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 12px;
+        @media (max-width: 767px) {
+            font-size: 10px;
+        }
+        .user-summary-container{
+            @media (max-width: 767px) {
+                margin-top: 3%;
+            }
+        }
+        .image-avatar {
+            width: 110px;
+            height: 110px;
+        }
+        .name {
+            margin-top: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .dot {
+            margin-right: 3px;
+        }
+        .status {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            & > div {
+                margin-right: 20px;
+            }
+        }
+        .link {
+            margin-right: 2%;
+            color: $color-black;
+        }
+        .mobile-introduce-container {
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        .mobile-status-container {
+            padding-top: 4%;
+            border-top: 1px solid $color-grey-extra-light;
+        }
+        .mobile-status {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            -ms-flex-pack: justify; /* TWEENER - IE 10 */
+            justify-content: space-around;
+            .number {
+                font-weight: bold;
+            }
+            .content {
+                color: $color-grey-light;
+            }
+            .feed, .like, .location {
+                display: -ms-flexbox; /* TWEENER - IE 10 */
+                display: flex;
+                -ms-flex-direction: column; /* TWEENER - IE 10 */
+                flex-direction: column;
+                -ms-flex-pack: justify; /* TWEENER - IE 10 */
+                justify-content: space-around;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.single-trendsetter-look {
+    .zion-feed-footer {
+        display: none;
+    }
+    .zion-feed-content {
+        height: 200px;
+        overflow: hidden;
+        @media (max-width: 767px) {
+            height: 33vw;
+        }
+        .main-image {
+            width: 100%;
+            height: 100%;
+            &:hover {
+                filter: brightness(50%);
+            }
+        }
+    }
+}
+
+.zion-pub-footer {
+    display: none;
+}
+
+.single-trendsetter-footer {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 15px;
+    width: 100%;
+    background: #1f1e1f;
+    .container {
+        text-align: center;
+        font-size: 8px;
+        a {
+            color: $color-grey-light;
+            font-weight: 100;
+            &:hover {
+                color: $color-grey-extra-light;
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.zion-admin-container {
+  margin-top: -45px; }
+  .zion-admin-container .header-menu {
+    margin-left: -15px;
+    height: 44px;
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: -15px; }
+    @media (min-width: 767px) {
+      .zion-admin-container .header-menu {
+        margin-top: -64px; } }
+    @media (max-width: 767px) {
+      .zion-admin-container .header-menu {
+        margin-left: 0;
+        position: fixed;
+        top: 65px;
+        width: 100%;
+        left: 0;
+        z-index: 15;
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .zion-admin-container .header-menu {
+        top: 35px; } }
+    .zion-admin-container .header-menu .dash-border-button {
+      margin-left: 2rem;
+      height: 100%;
+      line-height: 30px;
+      color: black;
+      font-weight: bolder; }
+      @media (max-width: 767px) {
+        .zion-admin-container .header-menu .dash-border-button {
+          margin-left: 0;
+          font-size: 12px;
+          padding-left: 6px;
+          padding-right: 6px; } }
+    .zion-admin-container .header-menu .zion-admin-header-active {
+      border-bottom: 3px solid #656364;
+      border-radius: 0; }
+    .zion-admin-container .header-menu .dashboard-show-more-button {
+      position: absolute;
+      right: 5%;
+      top: 15px; }
+    .zion-admin-container .header-menu .add-look-btn {
+      height: 30px;
+      line-height: 18px;
+      color: white;
+      background-color: black;
+      font-weight: normal;
+      border-radius: 5px;
+      margin-left: 3rem; }
+      @media (max-width: 767px) {
+        .zion-admin-container .header-menu .add-look-btn {
+          display: none; } }
+  .zion-admin-container .dashboard-show-more-container {
+    display: none;
+    position: fixed;
+    right: 5%;
+    top: 78px;
+    background: #1f1e1f;
+    z-index: 1; }
+  .zion-admin-container .dashboard-show-more-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .zion-admin-container .dashboard-show-more-list li {
+      padding: 10px 15px;
+      font-size: 12px;
+      border-top: 1px solid #404040; }
+    .zion-admin-container .dashboard-show-more-list a {
+      color: #FFFFFF; }
+  .zion-admin-container #admin-side-menu-container {
+    color: white; }
+    @media (min-width: 768px) {
+      .zion-admin-container #admin-side-menu-container {
+        padding-left: 2rem; } }
+    .zion-admin-container #admin-side-menu-container .admin-side-menu {
+      background-color: #323334;
+      margin-top: -90px;
+      text-align: center; }
+      .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #656364;
+        padding-top: 3rem; }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .side-avatar-container {
+          height: 130px;
+          width: 130px;
+          border-radius: 50%;
+          display: inline-block;
+          background: white;
+          margin-top: 1rem;
+          position: relative;
+          overflow: hidden;
+          border: 1px solid white;
+          cursor: pointer; }
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .side-avatar-container img {
+            border: none; }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .side-name {
+          margin-top: 10px;
+          color: white; }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-roles-container {
+          margin-top: 20px;
+          font-size: 7px;
+          text-align: center; }
+          @media (max-width: 991px) {
+            .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-roles-container {
+              font-size: 12px; } }
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-roles-container ul {
+            padding-left: 0; }
+            .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-roles-container ul li {
+              display: inline-block; }
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-roles-container .dot {
+            margin-left: 2px;
+            margin-right: 5px; }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-information {
+          margin-top: 15px;
+          color: white;
+          font-size: 13px;
+          font-weight: lighter; }
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .user-information-container .user-information span {
+            display: block;
+            line-height: 25px; }
+      .zion-admin-container #admin-side-menu-container .admin-side-menu .favourite-container {
+        text-align: left;
+        padding-top: 1.5rem;
+        padding-left: 3rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid #656364; }
+        @media (max-width: 991px) {
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .favourite-container {
+            padding-left: 1rem; } }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .favourite-container ul {
+          padding-left: 0; }
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .favourite-container ul li {
+            margin-top: 10px;
+            list-style-type: none;
+            display: block;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white; }
+            .zion-admin-container #admin-side-menu-container .admin-side-menu .favourite-container ul li a {
+              color: white; }
+      .zion-admin-container #admin-side-menu-container .admin-side-menu .side-footer-container {
+        padding-top: 1.5rem; }
+        @media (max-width: 991px) {
+          .zion-admin-container #admin-side-menu-container .admin-side-menu .side-footer-container {
+            padding-left: 5px; } }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .side-footer-container .apply-button {
+          background: transparent;
+          color: white;
+          border: 1px solid #656364; }
+          @media (max-width: 991px) {
+            .zion-admin-container #admin-side-menu-container .admin-side-menu .side-footer-container .apply-button {
+              padding-left: 5px;
+              padding-right: 5px;
+              font-size: 12px; } }
+      .zion-admin-container #admin-side-menu-container .admin-side-menu .logout-button-container {
+        margin-top: 13rem;
+        width: 100%; }
+        .zion-admin-container #admin-side-menu-container .admin-side-menu .logout-button-container .logout-button {
+          display: block;
+          background-color: #656364;
+          color: white;
+          border: none; }
+  .zion-admin-container .success-check {
+    padding-left: 10px; }

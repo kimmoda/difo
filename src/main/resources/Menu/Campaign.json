@@ -1,0 +1,329 @@
+{
+  "desktop": {
+    "header": [
+      {
+        "id": "menu-desktop-header-homepage",
+        "label": "Home",
+        "action": "",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-header-inspiration",
+        "label": "Campaign",
+        "action": "campaign",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-header-center-button",
+        "label": "Add Campaign",
+        "action": "",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": true,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-header-influencer",
+        "label": "Influencers",
+        "action": "trendsetter/list",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ],
+    "adminHeader": [
+      {
+        "id": "menu-desktop-admin-header-dashboard",
+        "label": "Dashboard",
+        "action": "action/auth/dashboard",
+        "actionPath": false,
+        "highlight": true,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-admin-side-profile",
+        "label": "My Profile",
+        "action": "action/auth/userprofile",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ],
+    "adminSide": [
+      {
+        "id": "menu-desktop-admin-side-following",
+        "label": "Following",
+        "action": "action/auth/user/likes",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ],
+    "footer": [
+      {
+        "id": "menu-desktop-footer-press",
+        "label": "Press",
+        "action": "blog",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-about",
+        "label": "About",
+        "action": "aboutus",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-faq",
+        "label": "FAQs",
+        "action": "faq",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-contact",
+        "label": "Contact",
+        "action": "contactus",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-privacy",
+        "label": "Privacy",
+        "action": "privacy",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-terms",
+        "label": "Terms of use",
+        "action": "termsandcondition",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-write-for-us",
+        "label": "Write for us",
+        "action": "action/article?articleId=125",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ]
+  },
+  "mobile": {
+    "tabBar": [
+      {
+        "id": "menu-desktop-header-homepage",
+        "label": "Home",
+        "icon": "fa-home",
+        "action": "home",
+        "actionPath": false,
+        "highlight": true,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-header-inspiration",
+        "label": "Campaign",
+        "action": "campaign",
+        "icon": "fa-search",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-mobile-tab-bar-center-button",
+        "label": "Add Campaign",
+        "action": "action/auth/looks",
+        "icon": "fa-pencil-square",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": true,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-header-influencer",
+        "label": "Influencers",
+        "icon": "fa-diamond",
+        "action": "trendsetter/list",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-header-me",
+        "label": "Me",
+        "icon": "fa-user-o",
+        "action": "action/auth/dashboard",
+        "actionPath": false,
+        "highlight": false,
+        "disableHyperlink": true,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ],
+    "adminHeader": [
+      {
+        "id": "menu-desktop-admin-header-dashboard",
+        "label": "Dashboard",
+        "action": "action/auth/dashboard",
+        "actionPath": false,
+        "highlight": true,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-admin-side-profile",
+        "label": "My Profile",
+        "action": "action/auth/userprofile",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+
+    ],
+    "adminMore": [
+      {
+        "id": "menu-desktop-admin-side-following",
+        "label": "Following",
+        "action": "action/auth/user/likes",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ],
+    "dropdown": [
+      {
+        "id": "menu-desktop-footer-press",
+        "label": "Press",
+        "action": "blog",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-about",
+        "label": "About",
+        "action": "aboutus",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-faq",
+        "label": "FAQs",
+        "action": "faq",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-contact",
+        "label": "Contact",
+        "action": "contactus",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-privacy",
+        "label": "Privacy",
+        "action": "privacy",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-terms",
+        "label": "Terms of use",
+        "action": "termsandcondition",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      },
+      {
+        "id": "menu-desktop-footer-write-for-us",
+        "label": "Write for us",
+        "action": "action/article?articleId=125",
+        "actionPath": false,
+        "disableHyperlink": false,
+        "categories": [
+          "PUB"
+        ]
+      }
+    ]
+  }
+}

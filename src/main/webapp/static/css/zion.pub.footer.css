@@ -1,0 +1,66 @@
+.zion-pub-footer {
+  height: 160px;
+  width: 100%;
+  background: #1f1e1f;
+  padding-top: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .zion-pub-footer .social-container h3 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 0; }
+  .zion-pub-footer .social-container span {
+    margin-right: 10px; }
+    .zion-pub-footer .social-container span i {
+      font-size: 16px;
+      color: #FFFFFF; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .zion-pub-footer .links-container ul {
+      padding: 0; } }
+  .zion-pub-footer .links-container li {
+    list-style-type: none;
+    margin-bottom: 5px; }
+    .zion-pub-footer .links-container li a {
+      color: #FFFFFF; }
+  .zion-pub-footer .copyright-content {
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-size: 12px; }
+
+.zion-tab-bar-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: 0;
+  padding: 0;
+  z-index: 15;
+  white-space: nowrap;
+  background-color: #f8f8f8; }
+  .zion-tab-bar-container .tab-item {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .zion-tab-bar-container .tab-item-link {
+    color: #a5a5a5; }
+  .zion-tab-bar-container .active {
+    color: #1f1e1f; }
+  .zion-tab-bar-container .tab-bar-pub-add-campaign {
+    font-size: 23px; }
+  .zion-tab-bar-container .icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100% auto;
+    background: no-repeat center;
+    font-style: normal;
+    position: relative; }
+  .zion-tab-bar-container .tabbar-label {
+    display: block;
+    line-height: 1;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    margin: 5px 0 0; }

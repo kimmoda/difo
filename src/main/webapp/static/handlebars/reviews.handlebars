@@ -1,0 +1,28 @@
+<section class="zion-stylist-review">
+    <div class="row">
+        <section class="edit-btn">
+            <a href="#">
+                <i id="zion-review-stylist" class="fa fa-lg fa-pencil pull-right {{#if alreadyRated}}hide{{/if}}" aria-hidden="true"></i>
+            </a>
+        </section>
+        {{#each reviews}}
+            <article class="review col-sm-12">
+                <div class="row">
+                    <div class="avatar col-lg-1 col-sm-2 col-xs-12">
+                        <img class="zion-circle-avatar" src="{{author.avatar}}">
+                    </div>
+                    <div class="content col-lg-11 col-sm-10 col-xs-12">
+                        <h4 class="title">{{author.displayName}}</h4>
+                        <div class="rate">
+                            {{#listRateStar currentRate}}{{/listRateStar}}
+                        </div>
+                        <p class="text">
+                            {{comment}}
+                        </p>
+                    </div>
+                </div>
+            </article>
+        {{/each}}
+        
+    </div>
+</section>

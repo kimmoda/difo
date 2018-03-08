@@ -1,0 +1,53 @@
+.red {
+  background-color: #FF3141; }
+
+.blue {
+  background-color: #6284c5; }
+
+.black {
+  background-color: #1f1e1f; }
+
+.white-bg {
+  background-color: #FFFFFF; }
+
+.grey-extra-lightest {
+  background-color: #f8f8f8; }
+
+.grey-extra-lighter {
+  background-color: #f3f3f3; }
+
+.grey-extra-light {
+  background-color: #e5e5e5; }
+
+.grey-light {
+  background-color: #a5a5a5; }
+
+.grey-dark {
+  background-color: #656364; }
+
+.white-dark {
+  background-color: #fcfcfc; }
+
+.black-light {
+  background-color: #404040; }
+
+.blue-dark {
+  color: #466a8e; }
+
+.blue-light {
+  color: #5ea3b1; }
+
+.blue-lighter {
+  color: #a9bdd0; }
+
+.grey-lighter {
+  color: #e6e6e6; }
+
+.zion-label-warning {
+  background-color: #F6D258; }
+
+.zion-label-success {
+  background-color: #88B14B; }
+
+.zion-label-error {
+  background-color: #D13076; }

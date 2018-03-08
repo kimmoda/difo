@@ -1,0 +1,107 @@
+<div class="user-roles-filter">
+    <section class="filter-container style-filter-show">
+        <div class="title">
+            <i class="fa fa-minus-square-o filter-expand" aria-hidden="true"></i>
+            <span>CREATOR</span>
+        </div>
+        <div class="checkbox" id="author-roles-filter">
+            <div class="col-sm-3 col-xs-6">
+                <label class="checkbox-inline">
+                    All
+                    <input type="checkbox" id="all" data-role-code="all" data-role-name="All" class="author-roles-item">
+                    <div class="control-indicator"></div>
+                </label>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <label class="checkbox-inline">
+                    Stylist
+                    <input type="checkbox" id="stylist" data-role-code="STYLIST" data-role-name="Stylist"
+                           class="author-roles-item">
+                    <div class="control-indicator"></div>
+                </label>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <label class="checkbox-inline">
+                    Influencer
+                    <input type="checkbox" id="influencer" data-role-code="INFLUENCER" data-role-name="Influencer"
+                           class="author-roles-item">
+                    <div class="control-indicator"></div>
+                </label>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <label class="checkbox-inline">
+                    Designer
+                    <input type="checkbox" id="designer" data-role-code="DESIGNER" data-role-name="Designer"
+                           class="author-roles-item">
+                    <div class="control-indicator"></div>
+                </label>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <label class="checkbox-inline">
+                    General user
+                    <input type="checkbox" id="default" data-role-code="DEFAULT" data-role-name="General user"
+                           class="author-roles-item">
+                    <div class="control-indicator"></div>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    {{#each tags}}
+        <section class="filter-container">
+            <div class="title">
+                <i class="fa fa-plus-square-o filter-expand" aria-hidden="true"></i>
+                <span>{{name}}</span>
+            </div>
+            <div class="checkbox">
+                {{#each tags}}
+                    <div class="col-sm-3 col-xs-6">
+                        <label class="checkbox-inline">
+                            #{{name}}
+                            <input type="checkbox" data-tag-name="{{name}}" data-tag-code="{{code}}"
+                                   class="zion-filter-tag">
+                            <div class="control-indicator"></div>
+                        </label>
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+    {{/each}}
+
+    <section class="filter-container style-filter-show clearfix" id="order-filter">
+        <div class="title col-xs-12">
+            <span>SORT BY</span>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+            <label class="radio-inline">
+                <input type="radio" name="order" id="TOP_VIEW" data-waschecked="false" data-order-name="View count" data-order-code="TOP_VIEW"
+                       class="zion-order-tag">
+                View count
+            </label>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+            <label class="radio-inline">
+                <input type="radio" name="order" id="TOP_SHARE" data-waschecked="false" data-order-name="Share count" data-order-code="TOP_SHARE"
+                       class="zion-order-tag">
+                Share count
+            </label>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+            <label class="radio-inline">
+                <input type="radio" name="order" id="TOP_LIKE" data-waschecked="false" data-order-name="Like count" data-order-code="TOP_LIKE"
+                       class="zion-order-tag">
+                Like count
+            </label>
+        </div>
+    </section>
+
+    <hr class="zion-hr-border">
+
+    <section class="filter-submit">
+        <span class="zion-link" id="filter-select-cancel-btn">Cancel</span>
+        <button class="btn zion-btn-black" id="filter-submit-btn">APPLY</button>
+    </section>
+
+</div>
+
+

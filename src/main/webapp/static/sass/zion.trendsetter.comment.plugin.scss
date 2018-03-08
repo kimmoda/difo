@@ -1,0 +1,43 @@
+@import "zion.util";
+
+.profile-comments-container {
+  width: 100%;
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .profile-sender-container {
+    margin-bottom: 20px;
+    text-align: right;
+    textarea {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+      height: 45px;
+      padding-left: 15px;
+      margin-top: 10px;
+      resize: none;
+      border-color: $color-grey-dark;
+    }
+    .profile-comments-submit {
+      margin-top: 10px;
+    }
+  }
+  .comment {
+    margin-bottom: 5px;
+  }
+  .comment-username {
+    font-weight: bold;
+  }
+  .comment-text {
+    padding-left: 10px;
+    color: $color-grey-dark;
+    overflow-wrap: break-word;
+  }
+  .user-comments {
+    margin-bottom: 20px;
+  }
+  .load-more-button-container {
+    text-align: center;
+  }
+}

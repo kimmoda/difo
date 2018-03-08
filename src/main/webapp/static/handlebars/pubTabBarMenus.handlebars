@@ -1,0 +1,12 @@
+{{#each pubTabBarMenus}}
+    {{#if icon}}
+        <div class="tab-item hidden-md hidden-lg">
+            <a class="tab-item-link {{#if active}}active{{/if}} {{this.id}}"
+               href="{{#if disableHyperlink}}javascript:void(0);{{else}}{{this.url}}{{/if}}"
+               title="menu-{{this.label}}">
+                <i class="icon fa fa-2x {{this.icon}}" aria-hidden="true"></i>
+                <span class="tabbar-label">{{this.label}}</span>
+            </a>
+        </div>
+    {{/if}}
+{{/each}}

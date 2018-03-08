@@ -1,0 +1,56 @@
+@import "zion.util";
+
+#campaign-list{
+    margin-top: 15px;
+}
+
+.zion-campaign-list-header-container {
+    margin-top: 15px;
+    .zion-campaign-status-link {
+        line-height: 24px;
+        border-bottom: 1px solid $color-black;
+        cursor: pointer;
+        font-weight: bolder;
+        margin-right: 25px;
+    }
+    .zion-campaign-list-header-content {
+        margin-top: 10px;
+        text-align: center;
+        .text {
+            margin-bottom: 0px;
+        }
+    }
+}
+.zion-campaign-list-header-divider {
+    margin-top: 0px;
+}
+
+.zion-expired-campaigns-container {
+    padding: 15px 5px 0 5px;
+}
+
+.zion-expired-campaign-item {
+    .zion-expired-campaign-user-avatar {
+        width: 64px;
+        height: 64px;
+    }
+    .creator-name {
+        font-weight: bolder;
+    }
+    .creation-date {
+        font-size: $zion-text-font-size-minus-2;
+    }
+}
+
+@media (max-width: 767px) {
+    .zion-wrapper {
+        .zion-content {
+            margin-top: 35px;
+        }
+    }
+    .zion-expired-campaign-item {
+        .media-body {
+            width: 250px;
+        }
+    }
+}

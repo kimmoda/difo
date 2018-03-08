@@ -1,0 +1,187 @@
+@import "zion.util";
+
+.zion-wrapper {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    -ms-flex-direction: column; /* TWEENER - IE 10 */
+    flex-direction: column;
+    .zion-content {
+        width: 100%;
+        padding: 0;
+        -ms-flexbox: auto; /* TWEENER - IE 10 */
+        flex: auto;
+        @media (max-width: 767px) {
+            margin-top: 35px;
+        }
+    }
+}
+
+.zion-pub-footer {
+    position: inherit;
+}
+
+.zion-shop-introduce-container {
+    .header {
+        height: 300px;
+        background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/shopmyfeed/top-banner.jpg") center / cover;
+        display: -ms-flexbox; /* TWEENER - IE 10 */
+        display: flex;
+        -ms-flex-direction: column; /* TWEENER - IE 10 */
+        flex-direction: column;
+        -ms-flex-pack: center; /* TWEENER - IE 10 */
+        justify-content: center;
+        text-align: center;
+        color: $color-white;
+        @media (max-width: 767px) {
+            height: 200px;
+        }
+    }
+    .title, .sub-title {
+        margin: 0;
+    }
+    .title {
+        font-weight: bold;
+    }
+    .main-content {
+        width: 60%;
+        margin-top: -6%;
+        margin-bottom: 2%;
+        background-color: white;
+        @media (max-width: 767px) {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .top-banner {
+        color: $color-white;
+        background-color: $color-grey-dark;
+        @media (min-width: 768px) {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+        }
+        .banner-left-container {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            @media (max-width: 767px) {
+                padding-top: 5%;
+            }
+        }
+        .banner-icon {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            -ms-flex-item-align: center; /* TWEENER - IE 10 */
+            align-items: center;
+            img {
+                margin: 0 auto;
+                width: 60%;
+            }
+        }
+        .banner-content {
+            display: -ms-flexbox; /* TWEENER - IE 10 */
+            display: flex;
+            -ms-flex-direction: column; /* TWEENER - IE 10 */
+            flex-direction: column;
+            -ms-flex-pack: center; /* TWEENER - IE 10 */
+            justify-content: center;
+            .title {
+                font-size: 0.9vw;
+                @media (max-width: 767px) {
+                    font-size: 2vw;
+                }
+            }
+            .content {
+                line-height: 1.2vw;
+                font-size: 0.7vw;
+                @media (max-width: 767px) {
+                    margin-top: 1vw;
+                    line-height: 3.2vw;
+                    font-size: 1.8vw;
+                }
+            }
+        }
+        .banner-process {
+            margin: 0 auto;
+            @media (max-width: 767px) {
+                width: 70%;
+            }
+            @media (min-width: 768px) {
+                border-left: 2px solid $color-grey-light;
+            }
+        }
+    }
+    .step-container {
+        margin: 4% 3% 0 3%;
+        border-bottom: 1px solid $color-grey-extra-light;
+    }
+    .no-border {
+        border: none;
+    }
+    .title-right {
+        @media (min-width: 768px) {
+            text-align: right;
+        }
+        .title {
+            flex: auto;
+        }
+    }
+    .step-title {
+        display: -ms-flexbox; /* TWEENER - IE 10 */
+        display: flex;
+        margin-bottom: 1%;
+        .step-num {
+            font-size: 2vw;
+            font-weight: 400;
+            @media (max-width: 767px) {
+                font-size: 3vw;
+            }
+        }
+        .title {
+            margin-top: 1vw;
+            margin-left: 1%;
+        }
+        .half-width {
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+        }
+        .title-content {
+            margin-bottom: 1%;
+            font-size: 1vw;
+            @media (max-width: 767px) {
+                font-size: 2vw;
+            }
+        }
+        .content {
+            margin-bottom: 1%;
+            font-size: 0.8vw;
+            font-weight: normal;
+            color: $color-grey-dark;
+            @media (max-width: 767px) {
+                font-size: 1.8vw;
+            }
+        }
+    }
+    .final-content {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 1vw;
+        font-weight: bold;
+        @media (max-width: 767px) {
+            font-size: 2vw;
+        }
+    }
+    .start-share {
+        text-align: center;
+        @media (max-width: 767px) {
+            margin-bottom: 8%;
+        }
+        .btn {
+            margin: 5%;
+            font-size: 1vw;
+            @media (max-width: 767px) {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+

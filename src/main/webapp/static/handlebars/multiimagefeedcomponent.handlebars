@@ -1,0 +1,71 @@
+<div class="feed-info-container zion-form" id="component-{{publicId}}">
+    {{#ifEqual mediaType "IMAGE"}}
+        <div class="form-group image-preview">
+            <div class="image-container">
+                <img id="look-thumbnail-{{publicId}}" easypin-id="{{publicId}}" class="look-thumbnail img-responsive" src="{{url}}"
+                     alt="look image preview" data-mediaId="{{publicId}}">
+            </div>
+        </div>
+        <div class="form-group margin-bottom-0 edit-area">
+            <div class="tools-area zion-hide" id="tools-area-{{publicId}}">
+                <div class="btn btn-sm insert-Link editor-tool-btn" data-mediaId="{{publicId}}" data-toggle="modal"
+                     data-target="#insert-link">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+            </div>
+            <label for="feed-description" class="title">Tell us about your look <span
+                    class="zion-form-compulsory">*</span></label>
+            <div contenteditable="true" class="form-control feed-description"
+                 id="feed-description-{{publicId}}" data-mediaId="{{publicId}}">{{{description}}}</div>
+
+            <div id="desc-error-indicator" class="zion-input-error-text zion-hide"></div>
+        </div>
+    {{/ifEqual}}
+    {{#ifEqual mediaType "VIDEO"}}
+        <div class="form-group video-container">
+            <iframe src="{{url}}" allowfullscreen></iframe>
+        </div>
+        <div class="form-group margin-bottom-0 edit-area">
+            <div class="tools-area zion-hide" id="tools-area-{{publicId}}">
+                <div class="btn btn-sm insert-Link editor-tool-btn" data-mediaId="{{publicId}}" data-toggle="modal"
+                     data-target="#insert-link">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+            </div>
+            <label for="feed-description" class="title">Tell us about your look <span
+                    class="zion-form-compulsory">*</span></label>
+            <div contenteditable="true" class="form-control feed-description"
+                 id="feed-description-{{publicId}}" data-mediaId="{{publicId}}">{{{description}}}</div>
+
+            <div id="desc-error-indicator" class="zion-input-error-text zion-hide"></div>
+        </div>
+    {{/ifEqual}}
+    {{#ifEqual mediaType "TEXT"}}
+        <div class="form-group margin-bottom-0 edit-area">
+            <div class="tools-area zion-hide" id="tools-area-{{publicId}}">
+                <div class="btn btn-sm insert-Link editor-tool-btn" data-mediaId="{{publicId}}" data-toggle="modal"
+                     data-target="#insert-link">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+            </div>
+            <label for="feed-description" class="title">Tell us about your look <span
+                    class="zion-form-compulsory">*</span></label>
+            <div contenteditable="true" class="form-control feed-description"
+                 id="feed-description-{{publicId}}" data-mediaId="{{publicId}}">{{{description}}}</div>
+
+            <div id="desc-error-indicator" class="zion-input-error-text zion-hide"></div>
+        </div>
+    {{/ifEqual}}
+    <div class="trash-icon" data-mediaId="{{publicId}}">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="action-container">
+        {{#ifEqual mediaType "IMAGE"}}
+            <label class="checkbox-inline">
+                <input id="cover-image-{{publicId}}" class="cover-image" type="checkbox" value="cover-image"
+                       data-mediaId="{{publicId}}">Set as cover image
+            </label>
+        {{/ifEqual}}
+    </div>
+
+</div>

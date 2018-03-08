@@ -1,0 +1,31 @@
+.profile-comments-container {
+  width: 100%; }
+  .profile-comments-container .title {
+    font-size: 20px;
+    font-weight: bold; }
+  .profile-comments-container .profile-sender-container {
+    margin-bottom: 20px;
+    text-align: right; }
+    .profile-comments-container .profile-sender-container textarea {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+      height: 45px;
+      padding-left: 15px;
+      margin-top: 10px;
+      resize: none;
+      border-color: #656364; }
+    .profile-comments-container .profile-sender-container .profile-comments-submit {
+      margin-top: 10px; }
+  .profile-comments-container .comment {
+    margin-bottom: 5px; }
+  .profile-comments-container .comment-username {
+    font-weight: bold; }
+  .profile-comments-container .comment-text {
+    padding-left: 10px;
+    color: #656364;
+    overflow-wrap: break-word; }
+  .profile-comments-container .user-comments {
+    margin-bottom: 20px; }
+  .profile-comments-container .load-more-button-container {
+    text-align: center; }

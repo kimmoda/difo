@@ -1,0 +1,34 @@
+.zion-submit-error-message {
+  color: #D13076;
+  padding: 5px 0 5px 0;
+  font-size: 14px; }
+
+.zion-input-error-indicator {
+  border-bottom: 1px solid #D13076 !important; }
+
+.zion-form i {
+  font-size: 25px; }
+.zion-form .alert > span {
+  padding-left: 10px; }
+.zion-form input, .zion-form textarea, .zion-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 13px; }
+.zion-form .zion-form-compulsory {
+  vertical-align: sub;
+  color: red; }
+.zion-form .zion-form-error-summary {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #ffdbea;
+  color: #D13076;
+  border: 1px solid #ffdbea;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.zion-form .zion-input-error-text {
+  color: #D13076;
+  margin-top: 5px;
+  font-size: 12px; }
+.zion-form .form-group label {
+  font-weight: 400;
+  color: #656364; }

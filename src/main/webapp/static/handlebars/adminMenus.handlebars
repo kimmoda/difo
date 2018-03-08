@@ -1,0 +1,45 @@
+<div class="admin-side-menu">
+    <div class="user-information-container">
+        <div class="side-avatar-container">
+            <img class="zion-circle-avatar-lg" src="{{userInfo.person.avatar}}" alt="{{userInfo.displayName}}">
+        </div>
+
+        <div class="side-name">
+        <span>
+            {{userInfo.displayName}}
+        </span>
+        </div>
+        <div class="user-roles-container">
+            <ul>{{#each userInfo.userRoles}}
+                <li>
+                    {{{listUserRoles this}}}
+                </li>
+            {{/each}}
+            </ul>
+        </div>
+
+    </div>
+    <div class="favourite-container">
+        <ul>
+            {{#each authSideMenus}}
+                <li>
+                    <a class="btn btn-link" href="{{this.url}}">
+                        <div>{{this.label}}</div>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="side-footer-container">
+        {{#unless userInfo.approvedTrendsetter}}
+            <a class="btn btn-default apply-button">
+                Become an Influencer
+            </a>
+        {{/unless}}
+    </div>
+    <div class="logout-button-container">
+        <a class="btn btn-default logout-button">
+            Log out
+        </a>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<section class="zion-stylist-contact">
+    <div class="row">
+        {{#if contact}}
+            <article class="contact col-xs-12">
+                <h3 class="title">Contact</h3>
+                <p class="phone">
+                    {{#if contact.phone1}}
+                        Phone: {{contact.phone1}}
+                    {{/if}}
+                </p>
+                <p class="email">
+                    {{#if contact.email}}
+                        Email: <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+                    {{/if}}
+                </p>
+                <p class="website">
+                    {{#if contact.website}}
+                        Website: <a href="{{contact.website}}" target="_blank">{{contact.website}}</a>
+                    {{/if}}
+                </p>
+                <section class="social-link">
+                    {{#if contact.facebook}}
+                        <a href="{{contact.facebook}}" target="_blank">
+                            <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    {{/if}}
+                    {{#if contact.youtube}}
+                        <a href="{{contact.youtube}}" target="_blank">
+                            <i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i>
+                        </a>
+                    {{/if}}
+                    {{#if contact.instagram}}
+                        <a href="{{contact.instagram}}" target="_blank">
+                            <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    {{/if}}
+                </section>
+            </article>
+        {{else}}
+            <article class="col-xs-12">
+                <h3>This fashion trendsetter hasn't added any contact info yet.
+                    <i class="fa fa-frown-o" aria-hidden="true"></i>
+                </h3>
+            </article>
+        {{/if}}
+    </div>
+</section>

@@ -1,0 +1,14 @@
+textarea {
+  resize: none; }
+
+.body-relative {
+  position: relative; }
+
+.user-profile-update .success-check {
+  margin-top: 10px; }
+.user-profile-update .message-display {
+  display: inline-block; }
+
+.user-profile-menu {
+  border-bottom: 3px solid #656364;
+  border-radius: 0; }

@@ -1,0 +1,13 @@
+@import 'zion.util';
+
+.zion-panel {
+	border-radius: 0;
+	border: 1px solid $color-grey-extra-lighter;
+	.panel-heading {
+        background-color: $color-grey-extra-light;
+        font-size: 16px; 
+        border-bottom: 1px solid $color-grey-extra-lighter;
+        padding: 15px;
+        border-radius: 0;
+	}
+}

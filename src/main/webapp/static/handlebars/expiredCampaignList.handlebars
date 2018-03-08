@@ -1,0 +1,18 @@
+{{#each data}}
+    <div class="media zion-expired-campaign-item">
+        <div class="media-left media-middle">
+            <a href="{{orignialPostUrl}}" target="_blank">
+                <img class="zion-expired-campaign-user-avatar img-circle avatar media-object" src="{{participant.avatar}}" alt="{{participant.displayName}}">
+            </a>
+        </div>
+        <div class="media-body">
+            <p><span class="creator-name">{{participant.displayName}}</span>&nbsp;<span class="creation-date">{{dateTimeFormat creationDate}}</span></p>
+            <h4 class="media-heading">{{subString title 256}}</h4>
+            <p class="zion-campaign-description">{{subString description 256}}</p>
+            <a href="{{orignialPostUrl}}" target="_blank">
+                <span class="zion-campaign-type">{{taskType}}</span>
+            </a>
+        </div>
+    </div>
+    <hr/>
+{{/each}}

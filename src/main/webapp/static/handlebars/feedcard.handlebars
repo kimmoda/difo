@@ -1,0 +1,73 @@
+{{#each data}}
+    {{#if this.isAddButton}}
+        <div class="stamp add-post-button">
+            <div class="zion-feed-container">
+                <div class="zion-feed-content dash">
+                    <div>
+                        <img src="https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/icon/addpost.png"
+                             alt="Add Post">
+                    </div>
+                </div>
+                <div class="zion-feed-footer">
+                    <div class="zion-feed-author-info">
+                        <div class="no-padding interact">
+                            <div class="zion-feed-like-plugin-container"></div>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="tag">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{else}}
+        <div class="grid-item" id="feed-{{id}}" data-feed-id="{{id}}">
+            <div class="zion-feed-container">
+                <div class="zion-feed-content">
+                    <div class="feed-image" id="{{this.id}}">
+                        {{#if this.coverImage.url}}
+                            <img class="main-image" src="{{this.coverImage.url}}" alt="{{this.title}}">
+                        {{else}}
+                            <img class="main-image"
+                                 src="https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/icon/defaultImage.png"
+                                 alt="Draft">
+                        {{/if}}
+                        {{#if this.isShowEditBtn}}
+                            <div class="edit-button-container" data-feedId="{{this.id}}">
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </div>
+                        {{/if}}
+                    </div>
+                </div>
+                <div class="zion-feed-footer">
+                    <div class="zion-feed-author-info">
+                        {{#if this.isShowAuthor}}
+                            <div class="col-xs-9 no-padding author-info-container"
+                                 data-user-id="{{this.author.userId}}">
+                                <img class="img-circle image-avatar img-responsive" src="{{this.author.avatar}}"
+                                     alt="avatar"/>
+                                <div class="author-name" title="{{this.author.displayName}}">
+                                    {{this.author.displayName}}
+                                </div>
+                            </div>
+                        {{/if}}
+                        <div class="{{#if this.isShowAuthor}}col-xs-3{{/if}} no-padding interact" id="{{this.id}}"
+                             data-feedId="{{this.id}}">
+                            <div class="zion-feed-like-plugin-container" data-feed-like-id="{{this.id}}"
+                                 data-feed-like="{{this.like}}" data-feed-like-count="{{likeCount}}"></div>
+                        </div>
+                    </div>
+                    <div class="action-container">
+                        <div class="tag">
+                            {{#each feedTags}}
+                                <span class="zion-feed-tag" data-tag-name="{{name}}"
+                                      data-tag-code="{{code}}">#{{name}}</span>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/if}}
+{{/each}}

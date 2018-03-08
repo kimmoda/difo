@@ -1,0 +1,18 @@
+{{#each data}}
+<li class="list-group-item">
+    <a href="{{updateCampaignUrl}}">
+        {{#if coverImageUrl}}
+            <img src="{{coverImageUrl}}" class="rounded float-left zion-thumbnail"></img>
+        {{else}}
+            <span class="glyphicon glyphicon-link"></span>
+        {{/if}}
+        <span>{{title}}</span> <span>({{ authorName }} | </span>--<span>{{taskStatus}}</span>
+    </a>
+    <div>
+        <span>Creation Date: {{creationDate}}</span>
+        <span> Expired Date{{expiredDate}}</span>
+        <a href="{{postUrl}}">Promotion Post Url</a>
+        <button type="button" class="btn btn-warning zion-delete-campaign" data-campaignid="{{id}}">Delete</button>
+    </div>
+</li>
+{{/each}}

@@ -1,0 +1,186 @@
+body {
+  font-family: montserrat;
+  line-height: 1.4;
+  font-size: 18px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.87); }
+
+/** Start header section*/
+.header-top-area {
+  left: 0;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 333; }
+
+.fixed-menu-bg {
+  background: #2F2B3A; }
+
+.logo {
+  padding-top: 13px; }
+  .logo a {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3px; }
+
+.main_menu .navbar-nav > li > a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 15px;
+  text-transform: uppercase; }
+  .main_menu .navbar-nav > li > a:hover {
+    background: transparent;
+    transition: .5s;
+    -webkit-transition: 0.5s; }
+
+.nav li a:hover,
+.nav li a:focus {
+  background: none;
+  color: #FFF; }
+
+/** end header section*/
+/*Start content section */
+.zion-content {
+  margin-top: 60px;
+  padding-top: 10px;
+  padding-bottom: 70px; }
+
+.zion-circle-avatar {
+  max-width: 100%;
+  /* make it responsive */
+  width: 75px;
+  display: block;
+  /* make it a circle */
+  border-radius: 50%;
+  /* Centering on image`s center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
+  /* it is optional, for making this div centered in parent*/
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+.zion-location {
+  font-size: 0.8em;
+  font-weight: lighter;
+  margin-left: 2rem; }
+
+.zion-service {
+  font-size: 0.9em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.38); }
+
+.zion-intro-summary {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.38); }
+
+.zion-post-count {
+  font-size: 2em;
+  background-color: transparent;
+  color: #b700db;
+  font-weight: lighter; }
+
+.zion-count-container {
+  margin-top: 2rem; }
+
+.zion-post-count-text {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.38); }
+
+.zion-like-feed.fa-heart-o {
+  color: #f1677f; }
+.zion-like-feed.fa-heart {
+  color: #f1677f; }
+
+.zion-stylist-header {
+  background-image: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/profile-header.jpg");
+  height: 400px;
+  position: relative; }
+  .zion-stylist-header .zion-user-summary {
+    vertical-align: middle;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: #FFF; }
+  .zion-stylist-header .zion-stylist-nav {
+    position: absolute;
+    bottom: 0; }
+    .zion-stylist-header .zion-stylist-nav .nav {
+      border-bottom: 0;
+      vertical-align: top; }
+      .zion-stylist-header .zion-stylist-nav .nav > li > a {
+        color: #FFF; }
+
+.zion-facebook-link {
+  color: #3b5998; }
+
+.zion-instagram-link {
+  color: #8a3ab9; }
+
+.zion-youtube-link {
+  color: #cc181e; }
+
+/*end content section */
+/*start footer section */
+.zion-footer {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  z-index: 333; }
+
+.zion-footer-menu .navbar-nav > li > a {
+  color: #FFF;
+  font-size: 12px;
+  padding-left: 0; }
+
+.zion-extra-menu {
+  display: none !important; }
+
+/*end footer section */
+/******************* load more **********************************/
+.spinner {
+  margin: 0px auto 0;
+  width: 70px;
+  text-align: center; }
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1); } }
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }

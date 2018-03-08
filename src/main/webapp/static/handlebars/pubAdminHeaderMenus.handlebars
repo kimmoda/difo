@@ -1,0 +1,7 @@
+{{#each pubAuthHeaderMenus}}
+    <a class="dash-border-button btn {{#if active}}zion-admin-header-active{{/if}}" href="{{this.url}}">
+    {{this.label}}
+    </a>
+{{/each}}
+<i class="dashboard-show-more-button fa fa-ellipsis-v zion-mobile-visible"
+   id="dashboard-show-more-button" aria-hidden="true"></i>

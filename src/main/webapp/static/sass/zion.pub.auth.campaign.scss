@@ -1,0 +1,83 @@
+@import "zion.util";
+
+.campaign-menu {
+    border-bottom: 3px solid $color-grey-dark;
+    border-radius: 0;
+}
+
+.title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.account-campaign {
+    margin-top: -10px;
+    text-align: right;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    .account {
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 200px;
+        .account-row-container {
+            position: relative;
+            display: block;
+            height: 20px;
+            max-width: 200px;
+            .account-title {
+                position: absolute;
+                left: 0;
+            }
+            .amount {
+                position: absolute;
+                right: 0;
+            }
+        }
+        .expense {
+        }
+        .balance {
+            margin-top: 5px;
+        }
+        .line {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+.my-finished-task-container {
+    margin-top: 15px;
+    display: none;
+    .finished-list {
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        .zion-campaign-reword{
+            text-align: right;
+            padding-right: 15px;
+        }
+        .zion-campaign-reword-icon{
+            padding-top: 8px;
+        }
+        .zion-campaign-reward-text{
+            float: right;
+        }
+    }
+}
+
+.campaign-history-container {
+    margin-top: 15px;
+    .zion-campaign-participant {
+        margin: 20px 0;
+    }
+    .zion-campaign-participant-name {
+        margin-left: 10px;
+    }
+    .zion-campaign-reword {
+        float: right;
+        line-height: 30px;
+    }
+}
+

@@ -1,0 +1,27 @@
+@import 'zion.util';
+
+.zion-campaign-card-container {
+    position: relative;
+    .zion-campaign-status-container {
+        top: 20px;
+        -ms-transform: rotate(0);
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+@media (min-width: 992px) {
+    .zion-wrapper {
+        .zion-content {
+            width: 750px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .zion-wrapper {
+        .zion-content {
+            margin-top: 35px;
+        }
+    }
+}

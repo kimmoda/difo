@@ -1,0 +1,37 @@
+{{#each users}}
+    <div class="item">
+        <div class="row">
+            {{#each this}}
+                <section class="col-sm-4 col-md-3 col-lg-3 trendsetter-container">
+                    <div class="col-md-12 image">
+                        <a href="{{stylistUrl}}">
+                            <img class="zion-circle-avatar-lg" src="{{person.avatar}}"
+                                 alt="trendsetter avatar">
+                            <!--<img class="style-pick"-->
+                                 <!--src="https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/stylePick_icon.png"-->
+                                 <!--alt="style-pick">-->
+                        </a>
+                    </div>
+                    <div class="col-md-12 content">
+                        <div class="info">
+                            <a href="{{stylistUrl}}">
+                                <h3 class="title">
+                                    {{displayName}}
+                                </h3>
+                            </a>
+                            <div class="role">
+                                {{#each userRoles}}
+                                    {{{listUserRoles this}}}
+                                {{/each}}
+                            </div>
+                        </div>
+                        <!--<div class="follow">-->
+                        <!--<button class="btn zion-btn-white">FOLLOW</button>-->
+                        <!--</div>-->
+                    </div>
+                    <hr class="trendsetter-bottom">
+                </section>
+            {{/each}}
+        </div>
+    </div>
+{{/each}}

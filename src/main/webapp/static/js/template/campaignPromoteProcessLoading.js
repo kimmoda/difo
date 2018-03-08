@@ -1,0 +1,6 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['campaignPromoteProcessLoading'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"promote-campaign-processing-container promote-campaign-loading-container\">\n    <div class=\"loading-icon\">\n        <i class=\"fa fa-spinner fa-pulse fa-4x fa-fw\"></i>\n    </div>\n    <p class=\"processing-title\">\n        We are confirming\n    </p>\n    <p class=\"processing-title\">\n        your participation in this campaign.\n    </p>\n    <div class=\"processing-message-1\">\n        <p class=\"processing-message-content\">\n            Please wait!\n        </p>\n        <p class=\"processing-message-content\">\n            Don't close this window...\n        </p>\n        <p class=\"processing-message-content\">\n            It may take up to a few seconds to verify your job.\n        </p>\n    </div>\n    <p class=\"processing-message-2\">\n        You will soon claim your reward!\n    </p>\n</div>\n\n\n";
+},"useData":true});
+})();

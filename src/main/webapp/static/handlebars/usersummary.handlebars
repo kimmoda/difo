@@ -1,0 +1,60 @@
+<div class="zion-user-summary row">
+    <div class="name col-md-12" title="{{displayName}}">{{displayName}}</div>
+    <div class="user-roles col-md-12">
+        <ul class="user-role-wrap">
+            {{#each userRoles}}
+                <li class="user-role">
+                    {{{listUserRoles this}}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="stats col-md-12">
+        <!--<div class="look">-->
+            <!--<span class="number">{{feedCount}}</span>-->
+            <!--<span class="content">Looks</span>-->
+        <!--</div>-->
+        <div class="like">
+            <span id="fans-count" class="number">{{fansCount}}</span>
+            <span class="content" id="like-content"></span>
+        </div>
+        <div class="location">
+            {{#if location}}
+                <i class="fa fa-lg fa-map-marker" aria-hidden="true"></i>
+                <span>{{location}}</span>
+            {{/if}}
+        </div>
+        <div class="social-link">
+            {{#if facebook}}
+                <a class="link" href="{{facebook}}" target="_blank">
+                    <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            {{/if}}
+            {{#if youtube}}
+                <a class="link" href="{{youtube}}" target="_blank">
+                    <i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i>
+                </a>
+            {{/if}}
+            {{#if instagram}}
+                <a class="link" href="{{instagram}}" target="_blank">
+                    <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                </a>
+            {{/if}}
+            {{#if website}}
+                <a class="link" href="{{website}}" target="_blank">
+                    <i class="fa fa-2x fa-globe" aria-hidden="true"></i>
+                </a>
+            {{/if}}
+        </div>
+        <div class="email">
+            {{#if email}}
+                <a href="mailto:{{email}}">{{email}}</a>
+            {{/if}}
+        </div>
+        <div class="introduce">
+            {{#if introduce}}
+                {{introduce}}
+            {{/if}}
+        </div>
+    </div>
+</div>

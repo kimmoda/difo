@@ -1,0 +1,21 @@
+@import "zion.util";
+
+textarea {
+  resize: none; }
+
+.body-relative {
+  position: relative;
+}
+
+.user-profile-update {
+  .success-check {
+    margin-top: 10px;
+  }
+  .message-display {
+    display: inline-block;
+  }
+}
+.user-profile-menu {
+   border-bottom: 3px solid $color-grey-dark;
+   border-radius: 0;
+}

@@ -1,0 +1,21 @@
+#empty-looks-container {
+  margin-top: 3rem;
+  text-align: center; }
+  #empty-looks-container .text-container {
+    text-align: center;
+    font-size: 20px;
+    color: #a5a5a5; }
+  #empty-looks-container #add-looks-button {
+    margin-top: 3rem;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 2px dashed #a5a5a5;
+    line-height: 140px;
+    font-size: 50px;
+    color: #656364;
+    border-radius: 10px;
+    cursor: pointer; }
+
+.modal-dialog .modal-content {
+  background: white; }

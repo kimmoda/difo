@@ -1,0 +1,14 @@
+<div class="zion-error-message-modal-container">
+    <p class="error-title">
+        Sorry!
+    </p>
+    <p class="error-message">
+        {{#if message}}
+            {{message}}
+        {{else}}
+        An error occurred. We are experiencing a busy network. Please try refreshing the page to solve this issue. 
+        {{/if}}
+        If you are still having problems, contact us at <a href="mailto:{{emailHelper}}"><b>{{emailHelper}}</b></a> and our friendly support team will get
+        back to you shortly.
+    </p>
+</div>

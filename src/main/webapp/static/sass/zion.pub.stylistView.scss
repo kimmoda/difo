@@ -1,0 +1,309 @@
+@import "zion.util";
+
+.zion-wrapper {
+  .zion-content {
+    width: 100%;
+    padding: 0;
+    @media (max-width: 767px) {
+      margin-top: 35px;
+    }
+  }
+}
+
+$stylist-header-height: 400px;
+$stylist-avatar-top: 100px;
+
+.zion-stylist-container {
+  .zion-stylist-header {
+    position: relative;
+    height: 350px;
+    background: url("https://s3-ap-southeast-2.amazonaws.com/zion-ui/client/trendsetter-home-bg.jpg") center;
+    background-size: cover;
+    @media (max-width: 767px) {
+      height: 240px;
+      margin-bottom: 125px;
+    }
+    .zion-user-header {
+      padding-top: 200px;
+      @media (max-width: 767px) {
+        padding-top: 120px;
+      }
+    }
+    .avatar {
+      text-align: left;
+      margin-top: 55px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        padding-left: 80px;
+        margin-top: 90px;
+      }
+      @media (min-width: 768px) and (max-width: 1199px) {
+        padding-left: 55px;
+      }
+    }
+    .advice-btn {
+      text-align: right;
+      margin-top: 100px;
+      @media (max-width: 767px) {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .follow-btn {
+        width: 100px;
+        padding: 6px 15px;
+        color: $color-black;
+        background-color: $color-white;
+        border: none;
+      }
+      .following {
+        color: $color-white;
+        background-color: $color-grey-light;
+      }
+      .unfollow {
+        color: $color-white;
+        background-color: $color-red;
+      }
+      .share-user-btn {
+        margin-left: 5px;
+        padding: 6px 12px;
+        background-color: $color-white;
+        border: none;
+      }
+      .user-react-button-group {
+        margin-bottom: 10px;
+      }
+      .user-share-container {
+        display: none;
+        width: 260px;
+        height: 90px;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border: 1px solid #a5a5a5;
+        border-radius: 4px;
+      }
+      .show-share-container {
+        display: inline-block;
+      }
+    }
+  }
+  .user-summary {
+    text-align: center;
+  }
+  .stylist-content {
+    //position: absolute;
+    //right: 0;
+    //top: -55px;
+    padding-left: 40px;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      padding-left: 0;
+    }
+  }
+  .looks-count-container {
+    margin-bottom: 20px;
+    .look-count {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .zion-user-summary {
+    .name {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    .user-roles {
+      margin-bottom: 10px;
+    }
+    .user-role-wrap {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      .user-role {
+        display: inline-block;
+      }
+      .dot {
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+    }
+    .like {
+      margin-bottom: 10px;
+      .number {
+        font-weight: bold;
+      }
+    }
+    .location {
+      margin-bottom: 10px;
+    }
+    .contact {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 4px 12px;
+      background-color: $color-grey-extra-light;
+    }
+    .contact-icon {
+      color: $color-grey-light;
+    }
+    .contact-content {
+      color: $color-black;
+    }
+    .link {
+      color: $color-black;
+    }
+    .social-link {
+      margin-bottom: 10px;
+    }
+    .email {
+      margin-bottom: 10px;
+      word-break: break-all;
+    }
+    .introduce {
+      color: $color-grey-light;
+      line-height: 20px;
+    }
+  }
+  .show-more-look {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .zion-stylist-content {
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 200px;
+    .grid {
+      margin-top: 0;
+    }
+    .zion-feed-container {
+      padding: 0;
+    }
+  }
+  .lower-stylist-content {
+    @media (max-width: 767px) {
+      margin-top: 220px;
+    }
+  }
+
+  .zion-style-intro {
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .panel-default {
+
+    }
+    .panel {
+      .panel-heading {
+        font-size: 16px;
+      }
+      .panel-body {
+        font-size: 14px;
+      }
+    }
+    .price {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .zion-stylist-service {
+    padding: 0 15px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .service {
+      margin-bottom: 50px;
+      background-color: $color-white;
+      .image {
+        height: 260px;
+      }
+      .content {
+        padding-right: 30px;
+        height: 260px;
+        .title {
+          font-weight: bold;
+        }
+        .text {
+          color: $color-grey-dark;
+        }
+        @media (max-width: 767px) {
+          padding: 0 30px;
+        }
+      }
+    }
+  }
+  .zion-stylist-review {
+    padding: 0 15px;
+    .edit-btn {
+      position: absolute;
+      right: 70px;
+      top: 15px;
+      margin-bottom: 30px;
+      a {
+        color: $color-grey-dark;
+      }
+    }
+    .review {
+      margin-bottom: 3px;
+      background-color: $color-white;
+      .avatar {
+        img {
+          margin: 10px 15px;
+          @media (min-width: 992px) and (max-width: 1199px) {
+            margin: 10px 35px;
+          }
+        }
+      }
+      .content {
+        @media (max-width: 767px) {
+          padding: 0 30px;
+        }
+        @media (min-width: 768px) {
+          padding-right: 30px;
+        }
+        .title {
+          font-weight: bold;
+        }
+        .rate {
+          padding-bottom: 10px;
+          color: $color-grey-light;
+          .active {
+            color: $color-grey-dark;
+          }
+        }
+      }
+    }
+  }
+  .zion-stylist-profile, .zion-stylist-contact {
+    padding: 0 15px;
+    background-color: $color-white;
+    article {
+      padding: 0 40px 20px 40px;
+      background-color: $color-white;
+      .title {
+        font-weight: bold;
+      }
+      p {
+        color: $color-grey-dark;
+      }
+    }
+    .contact {
+      height: 200px;
+      p {
+        margin-bottom: 0;
+      }
+      .social-link {
+        margin-top: 10px;
+        a {
+          padding-right: 10px;
+          color: $color-grey-dark;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,15 @@
+@import "zion.util";
+
+.zion-general-page {	
+	.page-header {
+	    text-align: center;
+	}
+	article {
+	   h2 {
+	       font-size: 20px;
+	   }
+	   p {
+	       line-height: 24px;
+	   }
+	}
+}

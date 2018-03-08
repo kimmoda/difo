@@ -1,0 +1,117 @@
+buildscript {
+  repositories {
+    jcenter()
+    maven { url "http://dl.bintray.com/robfletcher/gradle-plugins" }
+  }
+  dependencies {
+    classpath "com.github.robfletcher:compass-gradle-plugin:2.0.6"
+    classpath "com.github.jruby-gradle:jruby-gradle-plugin:0.1.+"
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+// gretty
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+apply plugin: "com.github.robfletcher.compass"
+
+group = 'com.zion'
+version = '1.0'
+
+description = 'Zion Webapp'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+repositories {
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'com.auth0', name: 'java-jwt', version:'3.2.0'
+    compile group: 'net.sourceforge.stripes', name: 'stripes', version:'1.5.8'
+    compile group: 'pl.pragmatists', name: 'JUnitParams', version:'1.1.0'
+    compile group: 'jstl', name: 'jstl', version:'1.2'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version:'2.19'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version:'2.19'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-multipart', version:'2.19'
+    compile group: 'com.google.inject', name: 'guice', version:'4.0'
+    compile group: 'com.google.inject.extensions', name: 'guice-servlet', version:'4.0'
+    compile group: 'com.squarespace.jersey2-guice', name: 'jersey2-guice', version:'0.10'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.1'
+    compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-base', version:'2.6.6'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version:'2.6.6'
+    compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version:'2.6.6'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.6.6'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version:'2.6.6'
+    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-cbor', version:'2.6.6'
+    compile group: 'log4j', name: 'log4j', version:'1.2.17'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.12'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version:'1.7.12'
+    compile group: 'joda-time', name: 'joda-time', version:'2.8.1'
+    compile group: 'org.mongodb.morphia', name: 'morphia', version:'1.3.2'
+    compile group: 'com.cloudinary', name: 'cloudinary-http44', version:'1.14.0'
+    compile group: 'commons-fileupload', name: 'commons-fileupload', version:'1.3.2'
+    compile group: 'commons-configuration', name: 'commons-configuration', version:'1.10'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.8.1'
+    compile group: 'com.google.api-client', name: 'google-api-client', version:'1.22.0'
+    compile group: 'org.quartz-scheduler', name: 'quartz', version:'2.3.0'
+    compile group: 'de.galan.packtag', name: 'packtag-core', version:'3.13.0'
+    compile 'org.apache.commons:commons-email:1.5'
+    compile 'org.freemarker:freemarker:2.3.26-incubating'
+    compile 'org.apache.httpcomponents:httpclient:4.5.3'
+    compile 'org.apache.commons:commons-csv:1.5'
+    compile 'eu.bitwalker:UserAgentUtils:1.20'
+    
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'org.mockito', name: 'mockito-all', version:'1.9.5'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+    
+}
+
+gretty {
+  // supported values:
+  // 'jetty7', 'jetty8', 'jetty9', 'jetty93', 'jetty94', 'tomcat7', 'tomcat8'
+  servletContainer = 'tomcat8'
+  contextPath = '/zion'
+  httpPort = 8080
+  debugPort = 8081
+  debugSuspend = false
+}
+
+compass {
+  cssDir = file("src/main/webapp/static/css")
+  sassDir = file("src/main/webapp/static/sass")
+  noLineComments = true
+}
+
+task sass(type:Exec) {
+    commandLine "sass", "--sourcemap=none", "--watch", 'src/main/webapp/static/sass/' + ":" + 'src/main/webapp/static/css/'
+}
+
+/*task runHandlebars(type:Exec) {
+    def handlebarsDir = 'src/main/webapp/static/handlebars/'
+    def compileTemplatesDir = 'src/main/webapp/static/js/templates/'
+    
+    File srcDir
+    FileCollection collection = files { srcDir.listFiles() }
+    
+    srcDir = file(handlebarsDir)
+    collection = files { srcDir.listFiles() }
+    collection.each {
+        def fileName = it.name.replace(".handlebars", ""); 
+        doLast {
+           exec {
+                commandLine "handlebars", handlebarsDir + it.name, "-f", compileTemplatesDir + fileName + ".js"
+            }
+        }
+    }
+    commandLine "handlebars", handlebarsDir, "-f", compileTemplatesDir + "templates.js"
+}*/
+

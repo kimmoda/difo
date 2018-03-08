@@ -1,0 +1,125 @@
+<div class="modal-dialog instagram-style-container" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="top-bar clearfix">
+                <div class="modal-close">
+                    <i class="fa fa-lg fa-chevron-left" aria-hidden="true" data-dismiss="modal" aria-label="Close"></i>
+                </div>
+                <div class="mobile-top-bar-title">
+                    <h4 class="mobile-top-bar-title-content">Post</h4>
+                </div>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="cancel-text" aria-hidden="true">&times;</span>
+            </button>
+            <div class="look-container">
+                <div class="feed-title">
+                    <h4 class="feed-title-content">
+                        {{title}}
+                    </h4>
+                </div>
+                <div class="feed-publish-time">
+                    <p class="feed-publish-time-content">
+                        {{dateTimeFormat creationDate}}
+                    </p>
+                </div>
+                <div class="author-info-container">
+                    <div class="user-profile-link author-avatar">
+                        <img class="img-circle img-responsive avatar" src="{{author.avatar}}" alt="avatar"/>
+                    </div>
+                    <div class="user-profile-link author-name-location" title="{{author.displayName}}">
+                        <span class="user-name">By {{author.displayName}}</span>
+                        {{#if location}}
+                            /{{location}}
+                        {{/if}}
+                    </div>
+                </div>
+                {{#if feedTags}}
+                    <div class="tag">
+                        {{#each feedTags}}
+                            <span class="zion-feed-tag" data-tag-name="{{name}}"
+                                  data-tag-code="{{code}}">#{{name}}</span>
+                        {{/each}}
+                    </div>
+                {{/if}}
+                <div class="annotation-container">
+                    {{#if coverImage}}
+                        {{#if coverImage.url}}
+                            <img class="image img-responsive center-block pin easypin-image" src="{{coverImage.url}}"
+                                 alt="{{title}}"
+                                 easypin-id="{{coverImage.publicId}}">
+                            <div class="cover-image-content">{{{coverImage.description}}}</div>
+                        {{/if}}
+                    {{/if}}
+                </div>
+                {{#if content}}
+                    <p class="description">
+                        {{{contentFormat content false}}}
+                    </p>
+                {{/if}}
+                {{#each mediaContent}}
+                    <br>
+                    {{#ifEqual mediaType "IMAGE"}}
+                        <img class="image img-responsive center-block pin easypin-image" src="{{url}}" alt="{{title}}"
+                             easypin-id="{{publicId}}">
+                        <div class="media-image-content">{{{description}}}</div>
+                    {{/ifEqual}}
+                    {{#ifEqual mediaType "VIDEO"}}
+                        <div class="video-container">
+                            <iframe src="{{url}}?control=0&rel=0&showinfo=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="media-video-content">{{{description}}}</div>
+                    {{/ifEqual}}
+                    {{#ifEqual mediaType "TEXT"}}
+                        <div class="text-container">{{{description}}}</div>
+                    {{/ifEqual}}
+                {{/each}}
+            </div>
+            <div class="share-container clearfix">
+                <div class="zion-modal-feed-like-container" data-feed-like-id="{{this.id}}"
+                     data-feed-like="{{this.like}}" data-feed-like-count="{{likeCount}}"></div>
+                <button id="share-feed-button" class="share-feed-btn btn btn-default">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </button>
+                <div class="feed-share-container">
+                    <div class="zion-social-share-plugin-container" id="zion-social-share-container"
+                         data-share-url="{{shortUrl}}" data-share-title="{{title}}"
+                         data-share-description="{{content}}" data-share-image="{{coverImage.url}}"></div>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-send-container clearfix">
+                    <textarea class="form-control comment-input" id="comments-input"
+                              placeholder="Comment on this look"></textarea>
+                    <div class="comment-send-button btn btn-primary pull-right" id="comment-send-button">SEND</div>
+                    <div class="zion-input-error-text zion-hide" id="comment-error">Please provide your comments less
+                        than 200 characters.
+                    </div>
+                </div>
+                <div class="comment-content-container" id="comment-container">
+                    <div id="comments"></div>
+                    <div class="load-more-button-container hidden" id="load-comment-more-button-container">
+                        <div class="load-more-button btn btn-link" id="load-more-button">View all comments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display:none;" easypin-tpl>
+    <popover>
+        <div class="exPopoverContainer" shadow="true">
+            <div class="popBg">
+                <a href={[url]} target="_blank">
+                    <p class="annotation-title">{[title]}</p>
+                </a>
+            </div>
+        </div>
+    </popover>
+    <marker>
+        <div class="marker2" style="height: 15px; width: 15px">
+        </div>
+    </marker>
+</div>
+</div>

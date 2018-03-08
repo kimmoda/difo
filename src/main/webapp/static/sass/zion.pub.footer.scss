@@ -1,0 +1,92 @@
+@import "zion.util";
+
+.zion-pub-footer {
+    height: 160px;
+    width: 100%;
+    background: $color-black;
+    padding-top: 30px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    .social-container {
+        h3 {
+            font-size: 16px;
+            color: $color-white;
+            margin-top: 0;
+        }
+        span {
+            margin-right: 10px;
+            i {
+                font-size: 16px;
+                color: $color-white;
+            }
+        }
+    }
+    .links-container {
+        ul {
+            @media (min-width: 768px) and (max-width: 991px) {
+                padding: 0;
+            }
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 5px;
+            a {
+                color: $color-white;
+            }
+        }
+    }
+    .copyright-content {
+        margin-top: 10px;
+        color: $color-white;
+        font-size: 12px;
+    }
+}
+
+.zion-tab-bar-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    z-index: 15;
+    white-space: nowrap;
+    background-color: $color-grey-extra-lightest;
+    .tab-item {
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .tab-item-link {
+        color: $color-grey-light;
+
+    }
+    .active {
+        color: $color-black;
+    }
+    .tab-bar-pub-add-campaign{
+        font-size: 23px;
+    }
+    .side-button{
+
+    }
+    .icon{
+        display: inline-block;
+        vertical-align: middle;
+        background-size: 100% auto;
+        background: no-repeat center;
+        font-style: normal;
+        position: relative;
+    }
+    .tabbar-label{
+        display: block;
+        line-height: 1;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 10px;
+        margin: 5px 0 0;
+    }
+}

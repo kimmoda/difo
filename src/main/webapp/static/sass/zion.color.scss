@@ -1,0 +1,72 @@
+@import "zion.util";
+
+.red {
+    background-color: $color-red;
+}
+
+.blue {
+    background-color: $color-blue;
+}
+
+.black {
+    background-color: $color-black;
+}
+
+.white-bg {
+    background-color: $color-white;
+}
+
+.grey-extra-lightest {
+    background-color: $color-grey-extra-lightest;
+}
+
+.grey-extra-lighter {
+    background-color: $color-grey-extra-lighter;
+}
+
+.grey-extra-light {
+    background-color: $color-grey-extra-light;
+}
+
+.grey-light {
+    background-color: $color-grey-light;
+}
+
+.grey-dark {
+    background-color: $color-grey-dark;
+}
+
+.white-dark {
+    background-color: $color-white-dark;
+}
+
+.black-light {
+    background-color: $color-black-light;
+}
+
+.blue-dark {
+    color: $color-blue-dark;
+}
+
+.blue-light {
+    color: $color-blue-light;
+}
+
+.blue-lighter {
+    color: $color-blue-lighter;
+}
+
+.grey-lighter {
+    color: $color-grey-lighter;
+}
+
+.zion-label-warning {
+    background-color: $color-warning;
+}
+
+.zion-label-success {
+    background-color: $color-success;
+}
+.zion-label-error{
+    background-color: $color-danger;
+}
