@@ -12,5 +12,5 @@ Feel free to join this community.
 - run ./gradlew tasks -all to see all related gradle tasks
 
 ## Demo website
-https://stylehub.online
-Https://hypeby.com
+- https://stylehub.online
+- https://hypeby.com
